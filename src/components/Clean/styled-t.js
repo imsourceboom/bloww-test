@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 // const verticalViewport = 45;
 
-export const CleanT = styled(motion.figure)`
+export const CleanTwrapper = styled(motion.figure)`
   position: absolute;
   top: 0;
   left: -68vw;
@@ -36,7 +36,7 @@ export const CleanT = styled(motion.figure)`
     left: 15vw;
   }
 
-  img {
+  svg {
     width: 100%;
   }
 `;
@@ -55,7 +55,7 @@ const wind = keyframes`
     }
 `;
 
-export const Wind = styled.figure`
+export const WindWrapper = styled.figure`
   position: absolute;
   top: 10vh;
   left: 10vw;
@@ -66,7 +66,7 @@ export const Wind = styled.figure`
     left: 40vw;
   }
 
-  img {
+  svg {
     width: 50%;
 
     @media (min-width: 768px) {
@@ -78,7 +78,7 @@ export const Wind = styled.figure`
   }
 `;
 
-export const WindTwin = styled.figure`
+export const WindTwinWrapper = styled.figure`
   position: absolute;
   top: 15vh;
   left: 50vw;
@@ -95,7 +95,7 @@ export const WindTwin = styled.figure`
     top: 16vh;
   }
 
-  img {
+  svg {
     width: 100%;
     max-width: 300px;
 
@@ -114,7 +114,7 @@ const wave = keyframes`
   }
 `;
 
-export const Wave = styled.div`
+export const WaveWrapper = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -132,7 +132,7 @@ export const Wave = styled.div`
     width: 60vw;
   }
 
-  img {
+  svg {
     position: absolute;
     right: 0;
     bottom: 0;

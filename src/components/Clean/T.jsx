@@ -5,6 +5,10 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Footer from 'src/components/Footer';
 import SVGone from './Specification/T/SVGone';
 import SVGtwo from './Specification/T/SVGtwo';
+import AnimatedCleanT from 'src/components/SVG/AnimatedCleanT';
+import Wind from 'src/components/SVG/Wind';
+import WindTwin from 'src/components/SVG/WindTwin';
+import Wave from 'src/components/SVG/Wave';
 
 import {
   Container,
@@ -22,7 +26,7 @@ import {
   Finish,
 } from './styled';
 
-import { CleanT, Wind, WindTwin, Wave } from './styled-t';
+import { CleanTwrapper, WindWrapper, WindTwinWrapper, WaveWrapper } from './styled-t';
 
 var CleanTcomponent = () => {
   return (
@@ -33,16 +37,16 @@ var CleanTcomponent = () => {
           <h2>취송류 하강 유도 장치</h2>
         </Title>
 
-        <Wind>
-          <img src="/images/clean-t/wind.svg" alt="wind 1" />
-        </Wind>
+        <WindWrapper>
+          <Wind />
+        </WindWrapper>
 
-        <WindTwin>
-          <img src="/images/clean-t/wind-twin.svg" alt="wind 2" />
-        </WindTwin>
+        <WindTwinWrapper>
+          <WindTwin />
+        </WindTwinWrapper>
 
         <Wrapper>
-          <CleanT
+          <CleanTwrapper
           // initial={{ y: 7, opacity: 0.8 }}
           // animate={{ y: -7, opacity: 1 }}
           // transition={{
@@ -50,13 +54,12 @@ var CleanTcomponent = () => {
           //   duration: 2.5,
           // }}
           >
-            <img src="/images/clean-t/symbol.svg" alt="clean-t symbol" />
-          </CleanT>
+            <AnimatedCleanT />
+          </CleanTwrapper>
 
-          <Wave>
-            <div className="hidden"></div>
-            <img src="/images/clean-t/wave.svg" alt="" />
-          </Wave>
+          <WaveWrapper>
+            <Wave />
+          </WaveWrapper>
 
           <MaxWidth>
             <Quote marginbottom="30">

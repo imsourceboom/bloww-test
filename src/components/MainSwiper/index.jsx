@@ -36,7 +36,7 @@ var MainSwiper = () => {
     activeSlideKey: String(swiperSlideKey),
     slidesPerView: 1,
     // parallax: true,
-    speed: 1000,
+    speed: 800,
     // grabCursor: true,
     mousewheel: true,
     mousewheelSensitivity: 0,
@@ -77,8 +77,8 @@ var MainSwiper = () => {
               <MainLogo />
             </figure>
             <AniLink
-              to="/about"
               fade
+              to="/about"
               onClick={() => {
                 slideKeyChange();
               }}>
@@ -100,6 +100,7 @@ var MainSwiper = () => {
                   <p>뿌리 하강 유도 장치</p>
                 </span>
                 <AniLink
+                  fade
                   to="/product/clean-o"
                   onClick={() => {
                     slideKeyChange();
@@ -121,6 +122,7 @@ var MainSwiper = () => {
                 </span>
                 <AniLink
                   to="/product/clean-t"
+                  fade
                   onClick={() => {
                     slideKeyChange();
                   }}>

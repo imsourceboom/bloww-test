@@ -9,6 +9,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from 'gatsby';
 import { useSelector } from 'react-redux';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import GlobalStyled from 'src/styles/GlobalStyled';
 
@@ -40,7 +41,7 @@ const Layout = ({ children }) => {
   // `);
 
   return (
-    <>
+    <PageTransition>
       {/* {console.log(path) */}
       <GlobalStyled />
       <Header notIndex={notIndex}>
@@ -53,7 +54,7 @@ const Layout = ({ children }) => {
       <MobileMenu path={path} />
       <GoTopButton path={path} />
       <Main notIndex={notIndex}>{children}</Main>
-    </>
+    </PageTransition>
   );
 };
 

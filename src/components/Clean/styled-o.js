@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Tree = styled.figure`
+export const TreeWrap = styled.figure`
   position: absolute;
   top: 0;
   left: 50%;
@@ -34,7 +34,7 @@ export const Tree = styled.figure`
     width: 310px;
   }
 
-  img {
+  svg {
     width: 100%;
   }
 `;

@@ -14,6 +14,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     {
+      resolve: `gatsby-plugin-page-transitions`,
+      options: {
+        transitionTime: 500,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

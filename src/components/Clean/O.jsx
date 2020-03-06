@@ -5,6 +5,7 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Footer from 'src/components/Footer';
 import SVGone from './Specification/O/SVGone';
 import SVGtwo from './Specification/O/SVGtwo';
+import Tree from 'src/components/SVG/Tree';
 
 import {
   Container,
@@ -22,7 +23,7 @@ import {
   Finish,
 } from './styled';
 
-import { Tree } from './styled-o';
+import { TreeWrap } from './styled-o';
 
 var CleanOcomponent = () => {
   var iFrame = useRef();
@@ -40,9 +41,10 @@ var CleanOcomponent = () => {
         </Title>
 
         <Wrapper clean>
-          <Tree>
-            <img src="/images/clean-o/tree.svg" alt="Clean-O tree" />
-          </Tree>
+          <TreeWrap>
+            {/* <img src="/images/clean-o/tree.svg" alt="Clean-O tree" /> */}
+            <Tree />
+          </TreeWrap>
 
           <MaxWidth>
             <Quote marginbottom="30">
