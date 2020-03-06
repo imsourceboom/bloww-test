@@ -17,7 +17,7 @@ var Index = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" image="/images/opengraph/bloww.jpg" />
       <MainSwiper />
     </Layout>
   );

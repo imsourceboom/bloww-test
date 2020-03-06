@@ -40,7 +40,6 @@ var Products = () => {
               </span>
               <AniLink
                 to="/product/clean-o"
-                fade
                 onClick={() => {
                   slideKeyChange();
                 }}>
@@ -61,7 +60,6 @@ var Products = () => {
               </span>
               <AniLink
                 to="/product/clean-t"
-                fade
                 onClick={() => {
                   slideKeyChange();
                 }}>

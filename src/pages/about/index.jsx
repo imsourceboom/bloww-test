@@ -20,14 +20,6 @@ var About = () => {
       <SEO
         title="About"
         description="자연과 가장 가까운 방법을 고민했습니다. 그렇게 자연과 가까운 방법으로 바꾸고 싶습니다."
-        // meta={
-        //   [
-        //     {
-        //       name: `description`,
-        //       content: ``,
-        //     },
-        //   ].concat[meta]
-        // }
       />
 
       <AboutComponent />
