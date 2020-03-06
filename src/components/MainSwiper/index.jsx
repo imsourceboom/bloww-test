@@ -39,7 +39,7 @@ var MainSwiper = () => {
     speed: 800,
     // grabCursor: true,
     mousewheel: true,
-    mousewheelSensitivity: 10,
+    mousewheelSensitivity: 100,
     mousewheelReleaseOnEdge: true,
     mousewheelForceToAxis: true,
     pagination: {
