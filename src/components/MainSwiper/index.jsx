@@ -36,21 +36,21 @@ var MainSwiper = () => {
     activeSlideKey: String(swiperSlideKey),
     slidesPerView: 1,
     // parallax: true,
-    speed: 800,
+    speed: 600,
     // grabCursor: true,
     mousewheel: true,
-    mousewheelSensitivity: 3000,
+    // mousewheelSensitivity: 3000,
     // mousewheelReleaseOnEdge: true,
     mousewheelForceToAxis: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-    on: {
-      slideChangeTransitionEnd: function() {
-        dispatch(swiperSlideKeyAction(this.activeIndex + 1));
-      },
-    },
+    // on: {
+    //   slideChangeTransitionEnd: function() {
+    //     dispatch(swiperSlideKeyAction(this.activeIndex + 1));
+    //   },
+    // },
   };
 
   return (
