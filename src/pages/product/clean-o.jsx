@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-// import CleanOcomponent from 'src/components/Clean/O';
+import CleanOcomponent from 'src/components/Clean/O';
 
 import SEO from 'src/templates/seo';
 import Layout from 'src/templates/Layout';
@@ -19,7 +19,7 @@ var CleanO = () => {
     <Layout>
       <SEO title="Clean-O" />
 
-      {/* <CleanOcomponent /> */}
+      <CleanOcomponent />
     </Layout>
   );
 };

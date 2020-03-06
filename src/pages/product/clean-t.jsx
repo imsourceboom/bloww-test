@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
-// import CleanTcomponent from 'src/components/Clean/T';
+import CleanTcomponent from 'src/components/Clean/T';
 
 import SEO from 'src/templates/seo';
 import Layout from 'src/templates/Layout';
@@ -19,7 +19,7 @@ var CleanT = () => {
     <Layout>
       <SEO title="Clean-T" />
 
-      {/* <CleanTcomponent /> */}
+      <CleanTcomponent />
     </Layout>
   );
 };

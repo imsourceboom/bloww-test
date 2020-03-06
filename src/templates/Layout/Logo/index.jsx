@@ -1,7 +1,6 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useSelector } from 'react-redux';
-// // import Fade from 'react-reveal/Fade';
 
 import { Container } from './styled';
 
@@ -10,8 +9,7 @@ var Logo = () => {
 
   return (
     <>
-      {/* <Fade left dalay={400}> */}
-      <AniLink to="/">
+      <AniLink to="/" fade>
         <Container notIndex={notIndex}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +46,6 @@ var Logo = () => {
           </svg>
         </Container>
       </AniLink>
-      {/* </Fade> */}
     </>
   );
 };

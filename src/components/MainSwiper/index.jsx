@@ -74,6 +74,7 @@ var MainSwiper = () => {
             </figure>
             <AniLink
               to="/about"
+              fade
               onClick={() => {
                 slideKeyChange();
               }}>
@@ -96,6 +97,7 @@ var MainSwiper = () => {
                 </span>
                 <AniLink
                   to="/product/clean-o"
+                  fade
                   onClick={() => {
                     slideKeyChange();
                   }}>
@@ -116,6 +118,7 @@ var MainSwiper = () => {
                 </span>
                 <AniLink
                   to="/product/clean-t"
+                  fade
                   onClick={() => {
                     slideKeyChange();
                   }}>
