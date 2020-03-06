@@ -1,23 +1,27 @@
-import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
-import Layout from '../templates/layout';
-import Image from '../components/image';
-import SEO from '../templates/seo';
+import SEO from 'src/templates/seo';
+import { notIndexAction } from 'src/state/nav';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <AniLink to="/page-2/" duration={1} fade>
-      Go to page 2
-    </AniLink>
-  </Layout>
-);
+import Layout from 'src/templates/Layout';
 
-export default IndexPage;
+import MainSwiper from 'src/components/MainSwiper';
+
+var Index = () => {
+  var dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(notIndexAction(false));
+  }, [dispatch]);
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <MainSwiper />
+      <div>hi</div>
+    </Layout>
+  );
+};
+
+export default Index;

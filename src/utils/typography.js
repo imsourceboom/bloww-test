@@ -4,14 +4,6 @@ const typography = new Typography({
   baseFontSize: '15px',
   baseLineHeight: 1.5,
   googleFonts: [
-    // {
-    //   name: 'Oswald',
-    //   styles: ['700'],
-    // },
-    // {
-    //   name: 'Roboto',
-    //   styles: ['100', '300', '400', '700'],
-    // },
     {
       name: 'Titillium Web',
       styles: ['400', '700'],

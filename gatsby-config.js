@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `BLOWW`,
@@ -30,12 +32,18 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `fullscreen`,
         orientation: `landscape`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicons/favicon-96x96.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: { pathToConfigModule: `src/utils/typography` },
+    },
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        src: path.join(__dirname, `src`),
+      },
     },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,

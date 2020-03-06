@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 // import reset from 'styled-reset';
 
 export default createGlobalStyle`
-    /* ${reset}; */
     
     html {
         scroll-behavior: smooth;
@@ -62,7 +61,7 @@ export default createGlobalStyle`
 
         input,
         textarea {
-            font-size: 14px;
+            font-size: 1rem;
 
             &::placeholder {
                 /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -92,7 +91,7 @@ export default createGlobalStyle`
         button {
             border: 0;
             background-color: rgba(0,0,0,0);
-            font-size: 14px;
+            font-size: 1rem;
             cursor: pointer;
         }
     }
