@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
 
-const verticalViewport = 45;
+// const verticalViewport = 45;
 
 export const CleanT = styled(motion.figure)`
   position: absolute;

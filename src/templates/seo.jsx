@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -80,8 +81,16 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
-    />
+      ].concat(meta)}>
+      <link rel="canonical" href="https://gramasia.com/" />
+      {/* <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-141901804-1"
+      /> */}
+      {/* <script src={withPrefix("google.js")} /> */}
+      <script type="text/javascript" src="//wcs.naver.net/wcslog.js" />
+      <script src={withPrefix('naver.js')} />
+    </Helmet>
   );
 }
 
