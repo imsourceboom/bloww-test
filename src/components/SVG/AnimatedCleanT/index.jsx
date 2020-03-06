@@ -18,16 +18,16 @@ export default () => (
             d="M631.5,666.751,743.635,778.885,856.52,666"
             fill="none"
             stroke="#6fb1b9"
-            stroke-miterlimit="10"
-            stroke-width="40"
+            strokeMiterlimit="10"
+            strokeMidth="40"
           />
           <line
             y2="152.515"
             transform="translate(744.085 779.035)"
             fill="#fff"
             stroke="#6fb1b9"
-            stroke-miterlimit="10"
-            stroke-width="40"
+            strokeMiterlimit="10"
+            strokeMidth="40"
           />
         </g>
       </g>
