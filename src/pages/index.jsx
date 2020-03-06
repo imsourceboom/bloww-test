@@ -19,7 +19,6 @@ var Index = () => {
     <Layout>
       <SEO title="Home" />
       <MainSwiper />
-      <div>hi</div>
     </Layout>
   );
 };
