@@ -37,7 +37,11 @@ var MainSwiper = () => {
     slidesPerView: 1,
     // parallax: true,
     speed: 1000,
+    // grabCursor: true,
     mousewheel: true,
+    mousewheelSensitivity: 0,
+    mousewheelReleaseOnEdge: true,
+    mousewheelForceToAxis: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
