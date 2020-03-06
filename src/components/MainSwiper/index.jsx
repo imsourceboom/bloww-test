@@ -40,7 +40,7 @@ var MainSwiper = () => {
     // grabCursor: true,
     mousewheel: true,
     mousewheelSensitivity: 1000,
-    mousewheelReleaseOnEdge: true,
+    // mousewheelReleaseOnEdge: true,
     // mousewheelForceToAxis: true,
     pagination: {
       el: '.swiper-pagination',
