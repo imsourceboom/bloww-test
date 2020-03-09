@@ -5,12 +5,12 @@ export default () => (
     <g transform="translate(-420 -4266)">
       <text transform="translate(553 4333)" fill="#1d1d1d">
         <tspan x="-32.019" y="0">
-          1200cm
+          1200mm
         </tspan>
       </text>
       <text transform="translate(864 4346)" fill="#1d1d1d">
         <tspan x="-27.013" y="0">
-          900cm
+          900mm
         </tspan>
       </text>
       <g transform="translate(410.594 4266)">

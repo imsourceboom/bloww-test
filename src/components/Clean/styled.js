@@ -296,6 +296,14 @@ export const ArticleTitle = styled.hgroup`
 `;
 
 export const Specification = styled.article`
+  @media (min-width: 768px) {
+    margin: 0 -32px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -387,10 +395,10 @@ export const Specification = styled.article`
 
         svg {
           width: 100%;
-          max-width: ${props => (props.clean ? '240px' : '360px')};
+          min-width: ${props => (props.clean ? '240px' : '320px')};
 
           @media (min-width: 1024px) {
-            max-width: ${props => (props.clean ? '250px' : '370px')};
+            min-width: ${props => (props.clean ? '250px' : '390px')};
           }
 
           text {
@@ -401,7 +409,7 @@ export const Specification = styled.article`
             }
 
             @media (min-width: 768px) {
-              font-size: ${props => (props.clean ? '18px' : '21px')};
+              font-size: ${props => (props.clean ? '18px' : '20px')};
 
               &.height {
                 transform: translate(446.434px, 240.19px) !important;

@@ -3,23 +3,18 @@ import React from 'react';
 export default () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="470.06"
-    heighht="374.196"
-    viewBox="0 0 480.06 374.196"
-  >
+    // width="470.06"
+    // heighht="374.196"
+    viewBox="0 0 490.06 374.196">
     <g transform="translate(0.626 -5.19)">
       <text transform="translate(219.434 19.19)" fill="#1d1d1d">
         <tspan x="-22.008" y="10">
-          900cm
+          900mm
         </tspan>
       </text>
-      <text
-        className="height"
-        transform="translate(446.434 240.19)"
-        fill="#1d1d1d"
-      >
+      <text className="height" transform="translate(446.434 240.19)" fill="#1d1d1d">
         <tspan x="-30.508" y="0">
-          750cm
+          750mm
         </tspan>
       </text>
       <g transform="translate(101.955 31.633)">
