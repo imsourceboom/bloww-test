@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 427.6">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 427.6">
     <g transform="translate(-542 -4337)">
       <g transform="translate(354.4 5588.9)">
         <rect
@@ -10,12 +10,7 @@ export default () => (
           transform="translate(187.6 -1223.1)"
           fill="#707070"
         />
-        <rect
-          width="1"
-          height="13.8"
-          transform="translate(490 -1223.1)"
-          fill="#707070"
-        />
+        <rect width="1" height="13.8" transform="translate(490 -1223.1)" fill="#707070" />
         <rect
           width="302.9"
           height="1"
@@ -152,7 +147,7 @@ export default () => (
         <path d="M103.2,70a.576.576,0,0,1-.6-.6V66l1-.5,4,3.1a.64.64,0,0,1-.8,1l-2.9-2.3v2.1A.669.669,0,0,1,103.2,70Z" />
         <path d="M26.6,93.1a.576.576,0,0,1-.6-.6V84a.6.6,0,0,1,1.2,0v8.4A.669.669,0,0,1,26.6,93.1Z" />
       </g>
-      <text transform="translate(694 4351)" fill="#1d1d1d">
+      <text transform="translate(694 4355)" fill="#1d1d1d">
         <tspan x="-22.008" y="0">
           35cm
         </tspan>

@@ -22,12 +22,11 @@ import { Container, Page, Footer, Pagination } from './styled';
 import { swiperSlideKeyAction } from 'src/state/nav';
 
 export default () => {
-  // const [currentPage, setCurrentPage] = useState(null);
-  var { notIndex, swiperSlideKey } = useSelector(state => state.nav);
+  const { notIndex, swiperSlideKey } = useSelector(state => state.nav);
 
-  var dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  var slideKeyChange = useCallback(
+  const slideKeyChange = useCallback(
     parameter => {
       dispatch(swiperSlideKeyAction(parameter));
     },
@@ -36,7 +35,6 @@ export default () => {
 
   const handlePageChange = useCallback(
     number => {
-      // setCurrentPage(number);
       dispatch(swiperSlideKeyAction(number));
     },
     [dispatch],

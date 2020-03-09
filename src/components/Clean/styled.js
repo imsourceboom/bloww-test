@@ -356,13 +356,20 @@ export const Specification = styled.article`
         svg {
           width: 100%;
           min-width: ${props => (props.clean ? '270px' : '340px')};
+          max-width: ${props => (props.clean ? '270px' : '340px')};
+
+          @media (min-width: 768px) {
+            min-width: ${props => props.clean && '320px'};
+            max-width: ${props => props.clean && '320px'};
+          }
 
           @media (min-width: 1024px) {
-            min-width: ${props => (props.clean ? '330px' : '400px')};
+            min-width: ${props => (props.clean ? '350px' : '400px')};
+            max-width: ${props => (props.clean ? '350px' : '400px')};
           }
 
           text {
-            font-size: ${props => (props.clean ? '18px' : '22px')};
+            font-size: ${props => (props.clean ? '20px' : '22px')};
 
             @media (min-width: 768px) {
               font-size: ${props => (props.clean ? '18px' : '21px')};
@@ -396,9 +403,11 @@ export const Specification = styled.article`
         svg {
           width: 100%;
           min-width: ${props => (props.clean ? '240px' : '320px')};
+          max-width: ${props => (props.clean ? '240px' : '320px')};
 
           @media (min-width: 1024px) {
-            min-width: ${props => (props.clean ? '250px' : '390px')};
+            min-width: ${props => (props.clean ? '255px' : '390px')};
+            max-width: ${props => (props.clean ? '255px' : '390px')};
           }
 
           text {
