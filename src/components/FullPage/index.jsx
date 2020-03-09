@@ -63,7 +63,8 @@ export default () => {
       <ReactPageScroller
         pageOnChange={handlePageChange}
         customPageNumber={swiperSlideKey}
-        animationTimer={800}>
+        animationTimer={800}
+        renderAllPagesOnFirstRender={true}>
         <Page className="one-page">
           <Header notIndex={notIndex}>
             <Wrapper>
