@@ -4,6 +4,8 @@ import { height } from 'src/styles/variable';
 export const Container = styled.div`
   position: relative;
   z-index: 4;
+  width: 100%;
+  height: 100vh;
   margin-top: -${height}px;
 
   @media (min-width: 1024px) {
@@ -13,7 +15,8 @@ export const Container = styled.div`
     margin-top: -${height + 15}px;
   }
   .swiper-container {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     .swiper-pagination {
       @media (min-width: 1024px) {

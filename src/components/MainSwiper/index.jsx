@@ -35,17 +35,17 @@ var MainSwiper = () => {
     direction: 'vertical',
     activeSlideKey: String(swiperSlideKey),
     slidesPerView: 1,
-    // speed: 600,
+    speed: 600,
     mousewheel: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-    // on: {
-    //   slideChangeTransitionEnd: function() {
-    //     dispatch(swiperSlideKeyAction(this.activeIndex + 1));
-    //   },
-    // },
+    on: {
+      slideChangeTransitionEnd: function() {
+        dispatch(swiperSlideKeyAction(this.activeIndex + 1));
+      },
+    },
   };
 
   return (

@@ -19,7 +19,7 @@ export default () => (
             fill="none"
             stroke="#6fb1b9"
             strokeMiterlimit="10"
-            strokeMidth="40"
+            strokeWidth="40"
           />
           <line
             y2="152.515"
@@ -27,7 +27,7 @@ export default () => (
             fill="#fff"
             stroke="#6fb1b9"
             strokeMiterlimit="10"
-            strokeMidth="40"
+            strokeWidth="40"
           />
         </g>
       </g>
