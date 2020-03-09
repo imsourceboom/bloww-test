@@ -21,7 +21,7 @@ var DeskMenu = ({ path }) => {
     <>
       <Menu notIndex={notIndex}>
         <li className={path === '/about' ? 'active' : ''}>
-          <AniLink to="/about" fade onClick={() => slideKeyChange(0)}>
+          <AniLink to="/about" fade onClick={() => slideKeyChange()}>
             About
           </AniLink>
         </li>
@@ -29,7 +29,7 @@ var DeskMenu = ({ path }) => {
           className={
             path === '/product/clean-o' || path === '/product/clean-t' ? 'active' : ''
           }>
-          <AniLink to="/" fade onClick={() => slideKeyChange(2)}>
+          <AniLink to="/" fade onClick={() => slideKeyChange(1)}>
             Product
           </AniLink>
         </li>
@@ -38,7 +38,7 @@ var DeskMenu = ({ path }) => {
             to="/"
             fade
             onClick={() => {
-              slideKeyChange(3);
+              slideKeyChange(2);
             }}>
             Contact
           </AniLink>

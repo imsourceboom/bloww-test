@@ -10,7 +10,7 @@ export const Button = styled(motion.button)`
   height: 35px;
 
   ${props =>
-    (props.slidekey === 3) | (props.path === '/about')
+    (props.slidekey === 2) | (props.path === '/about')
       ? css`
           border: 1px solid #838383;
           color: #838383;

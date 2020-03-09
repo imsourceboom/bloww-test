@@ -56,7 +56,7 @@ var MobileMenu = ({ path }) => {
               fade
               onClick={() => {
                 mobileToggle(false);
-                slideKeyChange(2);
+                slideKeyChange(1);
               }}>
               Product
             </AniLink>
@@ -67,7 +67,7 @@ var MobileMenu = ({ path }) => {
               fade
               onClick={() => {
                 mobileToggle(false);
-                slideKeyChange(3);
+                slideKeyChange(2);
               }}>
               Contact
             </AniLink>

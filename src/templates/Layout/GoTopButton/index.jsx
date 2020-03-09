@@ -25,7 +25,7 @@ var GoTopButton = ({ path }) => {
       <Button
         onClick={() => {
           scroll.scrollToTop({ duration: 700, smooth: true });
-          slideKeyChange(1);
+          slideKeyChange(0);
         }}
         slidekey={swiperSlideKey}
         path={path}
