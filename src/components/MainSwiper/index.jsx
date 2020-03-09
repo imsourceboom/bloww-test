@@ -38,18 +38,18 @@ var MainSwiper = () => {
     speed: 600,
     mousewheel: {
       releaseOnEdges: true,
-      sensitivity: 1000,
+      // sensitivity: 1000,
     },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-    // on: {
-    //   slideChangeTransitionEnd: function() {
-    //     dispatch(swiperSlideKeyAction(this.activeIndex + 1));
-    //     console.log('scroll!');
-    //   },
-    // },
+    on: {
+      slideChangeTransitionEnd: function() {
+        dispatch(swiperSlideKeyAction(this.activeIndex + 1));
+        console.log('scroll!');
+      },
+    },
   };
 
   return (
