@@ -37,6 +37,9 @@ var MainSwiper = () => {
     slidesPerView: 1,
     speed: 600,
     mousewheel: true,
+    mousewheelSensitivity: 0.1,
+    mousewheelForceToAxis: true,
+    mousewheelReleaseOnEdges: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
