@@ -38,23 +38,18 @@ var MainSwiper = () => {
     speed: 600,
     mousewheel: {
       releaseOnEdges: true,
-      forceToAxis: true,
       sensitivity: 1000,
     },
-
-    // mousewheelSensitivity: 0.1,
-    // mousewheelForceToAxis: true,
-    // mousewheelReleaseOnEdges: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-    on: {
-      slideChangeTransitionEnd: function() {
-        dispatch(swiperSlideKeyAction(this.activeIndex + 1));
-        console.log('scroll!');
-      },
-    },
+    // on: {
+    //   slideChangeTransitionEnd: function() {
+    //     dispatch(swiperSlideKeyAction(this.activeIndex + 1));
+    //     console.log('scroll!');
+    //   },
+    // },
   };
 
   return (
