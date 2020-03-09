@@ -36,10 +36,15 @@ var MainSwiper = () => {
     activeSlideKey: String(swiperSlideKey),
     slidesPerView: 1,
     speed: 600,
-    mousewheel: true,
-    mousewheelSensitivity: 0.1,
-    mousewheelForceToAxis: true,
-    mousewheelReleaseOnEdges: true,
+    mousewheel: {
+      releaseOnEdges: true,
+      // forceToAxis: true,
+      sensitivity: 0.1,
+    },
+
+    // mousewheelSensitivity: 0.1,
+    // mousewheelForceToAxis: true,
+    // mousewheelReleaseOnEdges: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
