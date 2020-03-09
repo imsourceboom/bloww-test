@@ -39,7 +39,7 @@ var MainSwiper = () => {
     mousewheel: {
       releaseOnEdges: true,
       // forceToAxis: true,
-      sensitivity: 0.1,
+      sensitivity: 100,
     },
 
     // mousewheelSensitivity: 0.1,
