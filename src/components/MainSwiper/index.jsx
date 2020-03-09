@@ -44,6 +44,7 @@ var MainSwiper = () => {
     on: {
       slideChangeTransitionEnd: function() {
         dispatch(swiperSlideKeyAction(this.activeIndex + 1));
+        console.log('scroll!');
       },
     },
   };
