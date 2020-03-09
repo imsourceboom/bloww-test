@@ -354,18 +354,21 @@ export const Specification = styled.article`
         }
 
         svg {
-          width: 100%;
+          /* width: 100%; */
           min-width: ${props => (props.clean ? '270px' : '340px')};
           max-width: ${props => (props.clean ? '270px' : '340px')};
+          height: ${props => (props.clean ? '294.516px' : '300.953px')};
 
           @media (min-width: 768px) {
             min-width: ${props => props.clean && '320px'};
             max-width: ${props => props.clean && '320px'};
+            height: ${props => props.clean && '349.047px'};
           }
 
           @media (min-width: 1024px) {
             min-width: ${props => (props.clean ? '350px' : '400px')};
             max-width: ${props => (props.clean ? '350px' : '400px')};
+            height: ${props => (props.clean ? '381.781px' : '354.078px')};
           }
 
           text {
@@ -404,10 +407,12 @@ export const Specification = styled.article`
           width: 100%;
           min-width: ${props => (props.clean ? '240px' : '320px')};
           max-width: ${props => (props.clean ? '240px' : '320px')};
+          height: ${props => (props.clean ? '352.062px' : '244.328px')};
 
           @media (min-width: 1024px) {
             min-width: ${props => (props.clean ? '255px' : '390px')};
             max-width: ${props => (props.clean ? '255px' : '390px')};
+            height: ${props => (props.clean ? '374.062px' : '297.781px')};
           }
 
           text {

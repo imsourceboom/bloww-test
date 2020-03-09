@@ -18,17 +18,19 @@ export const Container = styled.div`
       background-color: #aaa;
     }
 
-    img {
-      width: 100px;
+    svg {
+      width: 157.359px;
+      height: 38.922px;
       margin: 0 auto;
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         width: 120px;
-      }
+      } */
     }
 
     figcaption {
       padding-top: 15px;
+      text-align: center;
     }
   }
 
