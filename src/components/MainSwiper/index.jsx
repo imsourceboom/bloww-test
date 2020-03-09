@@ -38,8 +38,8 @@ var MainSwiper = () => {
     speed: 600,
     mousewheel: {
       releaseOnEdges: true,
-      // forceToAxis: true,
-      sensitivity: 100,
+      forceToAxis: true,
+      sensitivity: 1000,
     },
 
     // mousewheelSensitivity: 0.1,
