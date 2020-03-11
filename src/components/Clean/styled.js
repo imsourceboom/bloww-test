@@ -5,7 +5,7 @@ const verticalViewport = 50;
 
 export const Container = styled.div`
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   margin-top: -${height}px;
 
   @media (min-width: 1024px) {
