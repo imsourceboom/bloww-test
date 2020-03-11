@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { Container } from './styled';
 
+import { swiperSlideKeyAction } from 'src/state/nav';
+
 var Logo = () => {
   var { notIndex } = useSelector(state => state.nav);
+  var dispatch = useDispatch();
 
+  var slideKeyChange = useCallback(
+    parameter => {
+      dispatch(swiperSlideKeyAction(parameter));
+    },
+    [dispatch],
+  );
   return (
     <>
-      <AniLink to="/">
+      <AniLink to="/" onClick={() => slideKeyChange(0)}>
         <Container notIndex={notIndex}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

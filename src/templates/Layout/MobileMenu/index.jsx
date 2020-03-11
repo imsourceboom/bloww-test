@@ -41,7 +41,7 @@ var MobileMenu = ({ path }) => {
               to="/about"
               onClick={() => {
                 mobileToggle(false);
-                slideKeyChange();
+                slideKeyChange(0);
               }}>
               About
             </AniLink>

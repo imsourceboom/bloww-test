@@ -21,7 +21,7 @@ var DeskMenu = ({ path }) => {
     <>
       <Menu notIndex={notIndex}>
         <li className={path === '/about' ? 'active' : ''}>
-          <AniLink to="/about" onClick={() => slideKeyChange()}>
+          <AniLink to="/about" onClick={() => slideKeyChange(0)}>
             About
           </AniLink>
         </li>
