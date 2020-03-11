@@ -13,12 +13,12 @@ export const Page = styled.div`
 
   &.one-page {
     position: relative;
-    /* background-image: url('/images/main/bg/reed.jpg');
+    background-image: url('/images/main/bg/reed.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 
-    /* &::before {
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -26,7 +26,7 @@ export const Page = styled.div`
       width: 100%;
       height: 100%;
       background-color: rgba(60, 60, 60, 0.18);
-    } */
+    }
 
     .bg-video-wrapper {
       position: absolute;
