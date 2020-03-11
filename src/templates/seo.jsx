@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
       ].concat(meta)}>
-      <link rel="canonical" href="https://gramasia.com/" />
+      <link rel="canonical" href="https://bloww.io/" />
       {/* <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-141901804-1"
@@ -90,6 +90,12 @@ function SEO({ description, lang, meta, title, image }) {
       {/* <script src={withPrefix("google.js")} /> */}
       <script type="text/javascript" src="//wcs.naver.net/wcslog.js" />
       <script src={withPrefix('naver.js')} />
+      <link
+        rel="preload"
+        href="//fonts.googleapis.com/css?family=Titillium+Web:400,700|Noto+Sans+KR:300,400,500"
+        as="font"
+        crossorigin="crossorigin"
+      />
     </Helmet>
   );
 }

@@ -7,13 +7,13 @@ export const Container = styled.div`
   z-index: 4;
   /* width: 100%;
   height: 100vh; */
-  margin-top: -${height}px;
+  /* margin-top: -${height}px; */
 
   @media (min-width: 1024px) {
-    margin-top: -${height + 10}px;
+    /* margin-top: -${height + 10}px; */
   }
   @media (min-width: 1366px) {
-    margin-top: -${height + 15}px;
+    /* margin-top: -${height + 15}px; */
   }
 `;
 

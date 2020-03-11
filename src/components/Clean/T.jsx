@@ -103,8 +103,9 @@ var CleanTcomponent = () => {
                 </span>
               </IconContext.Provider>
               <p className="comment">
-                풍력을 이용한 자연친화적인 장치로
-                <br /> 호수, 저수지를 깨끗하게 바꿀 수 있습니다.
+                바람과 물의 흐름을 이용한 <br />
+                친환경적인 장치로 <br />
+                녹조현상을 개선할 수 있습니다.
               </p>
               <IconContext.Provider value={{ className: 'quote right' }}>
                 <span className="icon-wrapper">
@@ -157,15 +158,14 @@ var CleanTcomponent = () => {
             </Specification>
 
             <Description marginbottom="120">
-              취송류 하강 유도장치는 유속이 느리고, 물의 체류시간이 긴 환경을
-              <br />
-              바람의 힘을 이용해 바꾸도록 설계한 장치입니다. 바람의 방향과
-              <br /> 물의 흐름을 세밀하게 분석하여 설치되는 장치는 물의 깊은 곳까지
-              <br /> 산소가 자연스럽게 유입되도록 하여 자연정화 작용을 일으킵니다.
+              취송류 하강 유도장치는 녹조현상이 반복적으로 발생하는 호수나 저수지에
+              자연스러운 물의 순환이 이루어지도록 돕는 장치입니다. 지형에 따라 바람의
+              방향, 물의 흐름 등을 전문적으로 분석하여 설치되며, 물의 순환과 함께 심층까지
+              산소가 유입되면서 가장 친환경적인 방법으로 수질을 정화할 수 있습니다.
             </Description>
 
             <ArticleTitle>
-              <h3>설치방법</h3>
+              <h3>기술원리</h3>
             </ArticleTitle>
 
             <BuildMethod marginbottom="120">
@@ -183,7 +183,7 @@ var CleanTcomponent = () => {
                   <figure>
                     <img src="/images/clean-t/build-002.svg" alt="clean-t 설치방법 2" />
                     <figcaption>
-                      2. 바람에 밀려온 물결이 설치된 Y자 부교 구조를 만나면 수심 아해
+                      2. 바람에 밀려온 물결이 설치된 T자 부교 구조를 만나면 수심 아해
                       50m까지 내려갑니다.
                     </figcaption>
                   </figure>

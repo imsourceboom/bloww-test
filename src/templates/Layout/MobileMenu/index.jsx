@@ -39,7 +39,6 @@ var MobileMenu = ({ path }) => {
           <li className={path === '/about' ? 'active' : ''}>
             <AniLink
               to="/about"
-              fade
               onClick={() => {
                 mobileToggle(false);
                 slideKeyChange();
@@ -53,7 +52,6 @@ var MobileMenu = ({ path }) => {
             }>
             <AniLink
               to="/"
-              fade
               onClick={() => {
                 mobileToggle(false);
                 slideKeyChange(1);
@@ -64,7 +62,6 @@ var MobileMenu = ({ path }) => {
           <li>
             <AniLink
               to="/"
-              fade
               onClick={() => {
                 mobileToggle(false);
                 slideKeyChange(2);

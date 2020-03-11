@@ -9,7 +9,7 @@ var Logo = () => {
 
   return (
     <>
-      <AniLink to="/" fade>
+      <AniLink to="/">
         <Container notIndex={notIndex}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

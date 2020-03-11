@@ -28,6 +28,9 @@ export default createGlobalStyle`
         outline: none;
         box-sizing: border-box;
         background-color: white;
+        font-size: 15px;
+        line-height: 1.5;
+        /* font-family: 'Noto Sans KR', 'Titillium Web', sans-serif; */
 
         * {
             margin: 0;

@@ -9,7 +9,7 @@ import Layout from 'src/templates/Layout';
 import FullPage from 'src/components/FullPage';
 
 var Index = () => {
-  var dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(notIndexAction(false));

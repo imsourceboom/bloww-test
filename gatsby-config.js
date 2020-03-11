@@ -14,12 +14,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     {
-      resolve: `gatsby-plugin-page-transitions`,
-      options: {
-        transitionTime: 500,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -41,10 +35,10 @@ module.exports = {
         icon: `src/images/favicons/favicon-96x96.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: { pathToConfigModule: `src/utils/typography` },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: { pathToConfigModule: `src/utils/typography` },
+    // },
     {
       resolve: `gatsby-plugin-root-import`,
       options: {
