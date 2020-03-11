@@ -114,9 +114,9 @@ var CleanOcomponent = () => {
                 ref={iFrame}></iframe>
             </Youtube>
             {/* <Video marginbottom="120">
-              <video controls poster="/videos/clean-o-thumbnail.jpg">
-                <source src="/images/videos/clean-o.mp4" type="video/mp4" />
-              </video>
+              <video
+                src="https://www.youtube.com/embed/-4abFsBL3pw"
+                type="video/mp4"></video>
             </Video> */}
 
             <Quote marginbottom="30">

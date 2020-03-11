@@ -1,20 +1,10 @@
 import styled, { css } from 'styled-components';
-import { height } from 'src/styles/variable';
+// import { height } from 'src/styles/variable';
 import { Pager } from 'react-bootstrap';
 
 export const Container = styled.div`
   position: relative;
   z-index: 4;
-  /* width: 100%;
-  height: 100vh; */
-  /* margin-top: -${height}px; */
-
-  @media (min-width: 1024px) {
-    /* margin-top: -${height + 10}px; */
-  }
-  @media (min-width: 1366px) {
-    /* margin-top: -${height + 15}px; */
-  }
 `;
 
 export const Page = styled.div`
@@ -23,12 +13,12 @@ export const Page = styled.div`
 
   &.one-page {
     position: relative;
-    background-image: url('/images/main/bg/reed.jpg');
+    /* background-image: url('/images/main/bg/reed.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
-    &::before {
+    /* &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -36,6 +26,27 @@ export const Page = styled.div`
       width: 100%;
       height: 100%;
       background-color: rgba(60, 60, 60, 0.18);
+    } */
+
+    .bg-video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      iframe {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      video {
+        /* width: 100vw; */
+        height: 100vh;
+        margin: 0 auto;
+        object-fit: cover;
+      }
     }
 
     .box {

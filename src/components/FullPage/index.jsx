@@ -72,6 +72,11 @@ export default () => {
             </Wrapper>
           </Header>
           <MobileMenu />
+          <div className="bg-video-wrapper">
+            <video autoPlay loop muted playsInline>
+              <source src="/images/main/bg/flower.mp4" type="video/mp4" />
+            </video>
+          </div>
           <div className="box">
             <div>
               불어오는 바람의 방향으로 자연스럽게 흘러가듯이

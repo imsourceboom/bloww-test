@@ -17,7 +17,10 @@ var Index = () => {
 
   return (
     <Layout>
-      <SEO title="BLOWW" image="/images/opengraph/bloww.jpg" />
+      <SEO
+        title="BLOWW:Flows Naturally, Changes Naturally"
+        image="/images/opengraph/bloww.jpg"
+      />
       <FullPage />
     </Layout>
   );
