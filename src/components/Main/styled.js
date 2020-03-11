@@ -412,6 +412,7 @@ export const Pagination = styled.ul`
     }
 
     & > a,
+    & > button,
     & > span {
       &::before {
         content: '';
@@ -436,6 +437,7 @@ export const Pagination = styled.ul`
         return css`
           &:first-child {
             & > a,
+            & > button,
             & > span {
               &::before {
                 opacity: 1;
@@ -447,6 +449,7 @@ export const Pagination = styled.ul`
         return css`
           &:nth-child(2) {
             & > a,
+            & > button,
             & > span {
               &::before {
                 opacity: 1;
@@ -458,6 +461,7 @@ export const Pagination = styled.ul`
         return css`
           &:last-child {
             & > a,
+            & > button,
             & > span {
               &::before {
                 opacity: 1;

@@ -190,13 +190,13 @@ export default () => {
         </VerticalWrapper>
         <Pagination index={swiperSlideKey}>
           <li>
-            <a onClick={() => slideKeyChange(0)}></a>
+            <button type="button" onClick={() => slideKeyChange(0)}></button>
           </li>
           <li>
-            <a onClick={() => slideKeyChange(1)}></a>
+            <button type="button" onClick={() => slideKeyChange(1)}></button>
           </li>
           <li>
-            <a onClick={() => slideKeyChange(2)}></a>
+            <button type="button" onClick={() => slideKeyChange(2)}></button>
           </li>
         </Pagination>
       </Container>
