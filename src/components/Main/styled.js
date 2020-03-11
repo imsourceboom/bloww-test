@@ -21,10 +21,10 @@ export const FirstSection = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url('/images/main/bg/reed.gif');
+  /* background-image: url('/images/main/bg/reed.gif');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
   &::before {
     content: '';
@@ -40,6 +40,7 @@ export const FirstSection = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
 
@@ -50,7 +51,7 @@ export const FirstSection = styled.div`
     }
 
     video {
-      /* width: 100vw; */
+      width: 100vw;
       height: 100vh;
       margin: 0 auto;
       object-fit: cover;

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { height } from 'src/styles/variable';
 
 export const Header = styled.header`

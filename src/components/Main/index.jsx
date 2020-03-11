@@ -69,11 +69,13 @@ export default () => {
               </Wrapper>
             </Header>
             <MobileMenu />
-            {/* <div className="bg-video-wrapper">
-            <video autoPlay loop muted playsInline>
-              <source src="/images/main/bg/flower.mp4" type="video/mp4" />
-            </video>
-          </div> */}
+            <div className="bg-video-wrapper">
+              <video autoPlay loop muted playsInline poster="/images/main/bg/reed.jpg">
+                <source src="/images/main/bg/reed.mp4" type="video/mp4" />
+                <source src="/images/main/bg/reed.webm" type="video/webm" />
+                <source src="/images/main/bg/reed.ogv" type="video/ogg" />
+              </video>
+            </div>
             <div className="box">
               <div>
                 불어오는 바람의 방향으로 자연스럽게 흘러가듯이
