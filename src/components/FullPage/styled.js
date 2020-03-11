@@ -13,7 +13,7 @@ export const Page = styled.div`
 
   &.one-page {
     position: relative;
-    background-image: url('/images/main/bg/reed.jpg');
+    background-image: url('/images/main/bg/reed.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
