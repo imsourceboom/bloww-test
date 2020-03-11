@@ -6,7 +6,8 @@ import { notIndexAction } from 'src/state/nav';
 
 import Layout from 'src/templates/Layout';
 
-import FullPage from 'src/components/FullPage';
+// import FullPage from 'src/components/FullPage';
+import Main from 'src/components/Main';
 
 var Index = () => {
   const dispatch = useDispatch();
@@ -21,7 +22,8 @@ var Index = () => {
         title="BLOWW:Flows Naturally, Changes Naturally"
         image="/images/opengraph/bloww.jpg"
       />
-      <FullPage />
+      {/* <FullPage /> */}
+      <Main />
     </Layout>
   );
 };

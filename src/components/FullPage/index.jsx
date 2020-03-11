@@ -57,7 +57,10 @@ export default () => {
   const pagesNumbers = getPagesNumbers();
 
   return (
-    <Container>
+    <Container
+      onWheel={e => {
+        console.log(e);
+      }}>
       <ReactPageScroller
         pageOnChange={handlePageChange}
         customPageNumber={swiperSlideKey}

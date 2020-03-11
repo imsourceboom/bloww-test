@@ -1,7 +1,7 @@
 export const initialState = {
   notIndex: false,
   mobileNavigation: false,
-  swiperSlideKey: null,
+  swiperSlideKey: 0,
 };
 
 export const NOT_INDEX = 'NOT_INDEX';
