@@ -21,7 +21,7 @@ export const FirstSection = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url('/images/main/bg/reed.jpg');
+  background-image: url('/images/main/bg/reed.gif');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
