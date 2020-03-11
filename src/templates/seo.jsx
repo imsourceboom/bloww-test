@@ -38,8 +38,16 @@ function SEO({ description, lang, meta, title, image }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `robots`,
+          content: `index, follow`,
+        },
+        {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: `친환경, 환경, 블로우, bloww, 물, 묘목, 나무, 가로수길, environment`,
         },
         {
           property: `og:title`,
