@@ -45,4 +45,5 @@ export const Main = styled.main`
   position: relative;
   font-family: 'Noto Sans KR', 'Titillium Web', sans-serif;
   background-color: white;
+  overscroll-behavior-y: none;
 `;

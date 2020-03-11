@@ -7,6 +7,7 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         /* Microsoft scrollbar none */
         -ms-overflow-style: none;
+        overscroll-behavior-y: none;
 
         &,
         & * {

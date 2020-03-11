@@ -1,12 +1,14 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
+  overscroll-behavior-y: none;
 `;
 
 export const VerticalWrapper = styled.div`
+  position: relative;
   width: 100%;
   height: 300vh;
   transform: ${props => props.index === 0 && 'translateY(0)'};

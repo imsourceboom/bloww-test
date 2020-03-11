@@ -87,7 +87,7 @@ export default () => {
               <AniLink
                 to="/about"
                 onClick={() => {
-                  slideKeyChange();
+                  slideKeyChange(0);
                 }}>
                 <DetailViewButton />
               </AniLink>
@@ -108,7 +108,7 @@ export default () => {
                   <AniLink
                     to="/product/clean-o"
                     onClick={() => {
-                      slideKeyChange();
+                      slideKeyChange(1);
                     }}>
                     <DetailViewButton />
                   </AniLink>
@@ -128,7 +128,7 @@ export default () => {
                   <AniLink
                     to="/product/clean-t"
                     onClick={() => {
-                      slideKeyChange();
+                      slideKeyChange(1);
                     }}>
                     <DetailViewButton />
                   </AniLink>
