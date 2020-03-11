@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         </>
       )}
       <GoTopButton path={path} />
-      <Main notIndex={notIndex}>{children}</Main>
+      <Main path={path}>{children}</Main>
     </>
   );
 };
