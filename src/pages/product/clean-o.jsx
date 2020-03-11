@@ -18,7 +18,7 @@ var CleanO = () => {
   return (
     <Layout>
       <SEO
-        title="Clean-O"
+        title="BLOWW | Clean-O"
         description="뿌리 하강 유도 장치"
         image="/images/opengraph/clean-o.jpg"
       />

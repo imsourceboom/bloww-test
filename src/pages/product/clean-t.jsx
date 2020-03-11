@@ -18,7 +18,7 @@ var CleanT = () => {
   return (
     <Layout>
       <SEO
-        title="Clean-T"
+        title="BLOWW | Clean-T"
         description="취송류 하강 유도 장치"
         image="/images/opengraph/clean-t.jpg"
       />
