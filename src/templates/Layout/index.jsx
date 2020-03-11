@@ -24,7 +24,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {console.log(path)}
       <GlobalStyled />
       {path !== '/' && (
         <>
