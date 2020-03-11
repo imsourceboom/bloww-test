@@ -104,7 +104,7 @@ function SEO({ description, lang, meta, title, image }) {
         as="font"
         crossorigin="crossorigin"
       />
-      {/* <link rel="preload" href="/images/main/bg/reed.gif" as="image" /> */}
+      <link rel="preload" href="/images/main/bg/reed.jpg" as="image" />
       <link rel="preload" href="/images/main/bg/clean-o-bg.jpg" as="image" />
       <link rel="preload" href="/images/main/bg/clean-t-bg.jpg" as="image" />
     </Helmet>
