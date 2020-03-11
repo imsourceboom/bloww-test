@@ -70,7 +70,12 @@ export default () => {
             </Header>
             <MobileMenu />
             <div className="bg-video-wrapper">
-              <video autoPlay loop muted playsInline poster="/images/main/bg/reed.jpg">
+              <video
+                muted={true}
+                autoPlay={true}
+                loop={true}
+                playsInline={true}
+                poster="/images/main/bg/reed.jpg">
                 <source src="/images/main/bg/reed.mp4" type="video/mp4" />
                 <source src="/images/main/bg/reed.webm" type="video/webm" />
                 <source src="/images/main/bg/reed.ogv" type="video/ogg" />

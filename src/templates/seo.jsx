@@ -105,8 +105,8 @@ function SEO({ description, lang, meta, title, image }) {
         crossorigin="crossorigin"
       />
       <link rel="preload" href="/images/main/bg/reed.mp4" as="video" />
-      <link rel="preload" href="/images/main/bg/reed.mp4" as="video" />
-      <link rel="preload" href="/images/main/bg/reed.mp4" as="video" />
+      <link rel="preload" href="/images/main/bg/reed.webm" as="video" />
+      <link rel="preload" href="/images/main/bg/reed.ogv" as="video" />
       <link rel="preload" href="/images/main/bg/clean-o-bg.jpg" as="image" />
       <link rel="preload" href="/images/main/bg/clean-t-bg.jpg" as="image" />
     </Helmet>
