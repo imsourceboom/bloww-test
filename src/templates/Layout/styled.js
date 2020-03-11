@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { height } from 'src/styles/variable';
 
 export const Header = styled.header`
+  display: ${props => props.notIndex === false && 'none'};
   position: relative;
   z-index: 3;
   width: 100%;
@@ -43,15 +44,6 @@ export const Wrapper = styled.div`
 
 export const Main = styled.main`
   position: relative;
-  ${props =>
-    props.path === '/' &&
-    css`
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-    `}
   font-family: 'Noto Sans KR', 'Titillium Web', sans-serif;
   background-color: white;
   overscroll-behavior-y: none;
