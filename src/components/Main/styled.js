@@ -44,15 +44,11 @@ export const FirstSection = styled.div`
     width: 100vw;
     height: 100vh;
 
-    iframe {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-
     video {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+      /* min-width: 100vw; */
+      /* min-height: 100vh; */
       margin: 0 auto;
       object-fit: cover;
     }

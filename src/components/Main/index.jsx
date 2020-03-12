@@ -77,8 +77,8 @@ export default () => {
                 playsInline={true}
                 poster="/images/main/bg/reed.jpg">
                 <source src="/images/main/bg/reed.mp4" type="video/mp4" />
-                <source src="/images/main/bg/reed.webm" type="video/webm" />
-                <source src="/images/main/bg/reed.ogv" type="video/ogg" />
+                {/* <source src="/images/main/bg/reed.webm" type="video/webm" />
+                <source src="/images/main/bg/reed.ogv" type="video/ogg" /> */}
               </video>
             </div>
             <div className="box">
