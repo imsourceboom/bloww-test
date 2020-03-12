@@ -49,11 +49,6 @@ export const FirstSection = styled.div`
       /* margin: 0 auto; */
       object-fit: cover;
 
-      @media (min-width: 1024px) {
-        /* width: 100vw; */
-        /* height: auto; */
-      }
-
       @media (min-width: 1920px) {
         width: 100vw;
       }

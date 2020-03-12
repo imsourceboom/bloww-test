@@ -90,7 +90,7 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
       ].concat(meta)}>
-      <link rel="preload" href="/images/main/bg/reed.mov" as="video" />
+      {/* <link rel="preload" href="/images/main/bg/reed.mov" as="video" /> */}
       <link rel="canonical" href="https://bloww.io/" />
       {/* <script
         async

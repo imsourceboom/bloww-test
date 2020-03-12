@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useSelector, useDispatch } from 'react-redux';
 import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
@@ -28,6 +28,7 @@ import {
 import { swiperSlideKeyAction } from '../../state/nav';
 
 export default () => {
+  const [isDevice, setIsDevice] = useState(null);
   const { swiperSlideKey } = useSelector(state => state.nav);
   const dispatch = useDispatch();
 
@@ -49,6 +50,23 @@ export default () => {
     },
     [dispatch],
   );
+
+  useEffect(() => {
+    const device = window.navigator.userAgent;
+    let name;
+    if (device.indexOf('iPhone') !== -1) {
+      name = 'iPhone';
+    } else if (device.indexOf('Android') !== -1) {
+      name = 'Android';
+    } else if (device.indexOf('Macintosh') !== -1) {
+      name = 'Mac PC';
+    } else if (device.indexOf('Windows') !== -1) {
+      name = 'Windows PC';
+    } else if (device.indexOf('iPad') !== -1) {
+      name = 'iPad';
+    }
+    setIsDevice(name);
+  }, []);
 
   return (
     <ReactScrollWheelHandler
@@ -77,8 +95,11 @@ export default () => {
                 playsInline={true}
                 // poster="/images/main/bg/reed.jpg">
               >
-                {/* <source src="/images/main/bg/reed.mp4" type="video/mp4" /> */}
-                <source src="/images/main/bg/reed.mov" type="video/mp4" />
+                {isDevice === 'Android' || isDevice === 'iPhone' ? (
+                  <source src="/images/main/bg/reed_small.mov" type="video/mp4" />
+                ) : (
+                  <source src="/images/main/bg/reed.mov" type="video/mp4" />
+                )}
               </video>
             </div>
             <div className="box">
@@ -195,6 +216,7 @@ export default () => {
             </Footer>
           </ThirdSection>
         </VerticalWrapper>
+
         <Pagination index={swiperSlideKey}>
           <li>
             <button type="button" onClick={() => slideKeyChange(0)}></button>
