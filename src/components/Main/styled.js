@@ -19,7 +19,7 @@ export const VerticalWrapper = styled.div`
 
 export const FirstSection = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 33.3333333333%;
   position: relative;
   /* background-image: url('/images/main/bg/reed.gif');
   background-position: center;
@@ -45,7 +45,7 @@ export const FirstSection = styled.div`
     height: 100vh;
 
     video {
-      height: 100vh;
+      height: 100%;
       /* margin: 0 auto; */
       object-fit: cover;
 
@@ -124,7 +124,7 @@ export const FirstSection = styled.div`
 
 export const SecondSection = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 33.3333333333%;
   display: flex;
   flex-direction: column;
 
@@ -263,7 +263,7 @@ export const SecondSection = styled.div`
 
 export const ThirdSection = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 33.3333333333%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
