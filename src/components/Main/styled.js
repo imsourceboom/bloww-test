@@ -14,7 +14,8 @@ export const VerticalWrapper = styled.div`
   transform: ${props => props.index === 0 && 'translateY(0)'};
   transform: ${props => props.index === 1 && 'translateY(-100vh)'};
   transform: ${props => props.index === 2 && 'translateY(-200vh)'};
-  transition: 0.6s;
+  transition-property: transform;
+  transition-duration: 0.6s;
 `;
 
 export const FirstSection = styled.div`
