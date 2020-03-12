@@ -90,6 +90,7 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
       ].concat(meta)}>
+      <link rel="preload" href="/images/main/bg/reed.mov" as="video" />
       <link rel="canonical" href="https://bloww.io/" />
       {/* <script
         async
@@ -104,9 +105,6 @@ function SEO({ description, lang, meta, title, image }) {
         as="font"
         crossorigin="crossorigin"
       />
-      {/* <link rel="preload" href="/images/main/bg/reed.mp4" as="video" />
-      <link rel="preload" href="/images/main/bg/reed.webm" as="video" />
-      <link rel="preload" href="/images/main/bg/reed.ogv" as="video" /> */}
       {/* <link rel="preload" href="/images/main/bg/clean-o-bg.jpg" as="image" />
       <link rel="preload" href="/images/main/bg/clean-t-bg.jpg" as="image" /> */}
     </Helmet>
