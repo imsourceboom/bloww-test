@@ -37,7 +37,7 @@ var CleanOcomponent = () => {
       <Container>
         <Title>
           <h1>Clean - O</h1>
-          <h2>뿌리 하강 유도 장치</h2>
+          <h2>뿌리 하강 유도장치</h2>
         </Title>
 
         <Wrapper clean>

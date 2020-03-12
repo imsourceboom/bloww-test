@@ -45,12 +45,18 @@ export const FirstSection = styled.div`
     height: 100vh;
 
     video {
-      width: 100%;
-      height: 100%;
-      /* min-width: 100vw; */
-      /* min-height: 100vh; */
-      margin: 0 auto;
+      /* height: 100vh; */
+      /* margin: 0 auto; */
       object-fit: cover;
+
+      @media (min-width: 1024px) {
+        /* width: 100vw; */
+        /* height: auto; */
+      }
+
+      @media (min-width: 1920px) {
+        width: 100vw;
+      }
     }
   }
 

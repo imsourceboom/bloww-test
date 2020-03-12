@@ -34,7 +34,7 @@ var CleanTcomponent = () => {
       <Container>
         <Title>
           <h1>Clean - T</h1>
-          <h2>취송류 하강 유도 장치</h2>
+          <h2>취송류 하강 유도장치</h2>
         </Title>
 
         <WindWrapper>

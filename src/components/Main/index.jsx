@@ -79,8 +79,6 @@ export default () => {
               >
                 {/* <source src="/images/main/bg/reed.mp4" type="video/mp4" /> */}
                 <source src="/images/main/bg/reed.mov" type="video/mp4" />
-                {/* <source src="/images/main/bg/reed.webm" type="video/webm" />
-                <source src="/images/main/bg/reed.ogv" type="video/ogg" /> */}
               </video>
             </div>
             <div className="box">
@@ -112,7 +110,7 @@ export default () => {
                 <div>
                   <span>
                     <p>Clean - O</p>
-                    <p>뿌리 하강 유도 장치</p>
+                    <p>뿌리 하강 유도장치</p>
                   </span>
                   <AniLink
                     to="/product/clean-o"
@@ -132,7 +130,7 @@ export default () => {
                 <div>
                   <span>
                     <p>Clean - T</p>
-                    <p>취송류 하강 유도 장치</p>
+                    <p>취송류 하강 유도장치</p>
                   </span>
                   <AniLink
                     to="/product/clean-t"
