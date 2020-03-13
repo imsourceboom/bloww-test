@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const VerticalWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 300vh;
+  height: 300%;
   transform: ${props => props.index === 0 && 'translateY(0)'};
   transform: ${props => props.index === 1 && 'translateY(-100vh)'};
   transform: ${props => props.index === 2 && 'translateY(-200vh)'};
