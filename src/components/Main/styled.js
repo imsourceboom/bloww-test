@@ -16,8 +16,8 @@ export const VerticalWrapper = styled.div`
   height: 300%;
   will-change: transform;
   transform: ${props => props.index === 0 && 'translateY(0)'};
-  transform: ${props => props.index === 1 && 'translateY(-100vh)'};
-  transform: ${props => props.index === 2 && 'translateY(-200vh)'};
+  transform: ${props => props.index === 1 && 'translateY(-33.3333333333%)'};
+  transform: ${props => props.index === 2 && 'translateY(-66.6666666666%)'};
   transition-property: transform;
   transition-duration: 0.6s;
 `;
