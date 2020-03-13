@@ -48,18 +48,8 @@ export const FirstSection = styled.div`
 
     video {
       width: 100%;
-      height: 100%;
-      /* margin: 0 auto; */
+      height: ${props => (props.device === 'Windows PC' ? 'auto' : '100%')};
       object-fit: cover;
-
-      /* @media (min-width: 768px) {
-        width: auto;
-        height: auto;
-      } */
-
-      /* @media (min-width: 1920px) {
-        width: 100%;
-      } */
     }
   }
 
