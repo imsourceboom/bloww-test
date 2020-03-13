@@ -18,7 +18,7 @@ var Logo = () => {
   );
   return (
     <>
-      <AniLink to="/" onClick={() => slideKeyChange(0)}>
+      <AniLink fade to="/" onClick={() => slideKeyChange(0)}>
         <Container notIndex={notIndex}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

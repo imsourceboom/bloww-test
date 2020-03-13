@@ -113,6 +113,7 @@ export default () => {
                 <MainLogo />
               </figure>
               <AniLink
+                fade
                 to="/about"
                 onClick={() => {
                   slideKeyChange(0);
@@ -134,6 +135,7 @@ export default () => {
                     <p>뿌리 하강 유도장치</p>
                   </span>
                   <AniLink
+                    fade
                     to="/product/clean-o"
                     onClick={() => {
                       slideKeyChange(1);
@@ -154,6 +156,7 @@ export default () => {
                     <p>취송류 하강 유도장치</p>
                   </span>
                   <AniLink
+                    fade
                     to="/product/clean-t"
                     onClick={() => {
                       slideKeyChange(1);
