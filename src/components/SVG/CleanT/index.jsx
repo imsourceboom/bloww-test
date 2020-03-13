@@ -2,7 +2,6 @@ import React from 'react';
 
 export default () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     // width="150.069"
     // height="165.077"
     viewBox="0 0 150.069 165.077">
