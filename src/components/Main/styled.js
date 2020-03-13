@@ -177,6 +177,25 @@ export const SecondSection = styled.div`
         }
       }
 
+      .back-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+
+          @media (min-width: 768px) {
+            /* width: auto; */
+            height: ${props => (props.device === 'Windows PC' ? 'auto' : '100%')};
+          }
+        }
+      }
+
       .box {
         position: absolute;
         top: 50%;
@@ -247,7 +266,7 @@ export const SecondSection = styled.div`
     }
 
     &.clean-o {
-      background-image: url('/images/main/bg/clean-o-bg.jpg');
+      /* background-image: url('/images/main/bg/clean-o-bg.jpg'); */
     }
 
     &.clean-t {
