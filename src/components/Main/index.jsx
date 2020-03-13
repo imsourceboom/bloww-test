@@ -131,9 +131,6 @@ export default () => {
 
           <SecondSection device={isDevice}>
             <div className="clean-o">
-              <div className="back-img">
-                <img src="/images/main/bg/clean-o-bg.jpg" alt="clean O 문제현상 이미지" />
-              </div>
               <div className="box">
                 <figure>
                   <CleanOsymbol />

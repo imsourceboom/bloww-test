@@ -266,7 +266,7 @@ export const SecondSection = styled.div`
     }
 
     &.clean-o {
-      /* background-image: url('/images/main/bg/clean-o-bg.jpg'); */
+      background-image: url('/images/main/bg/clean-o-bg.jpg');
     }
 
     &.clean-t {
