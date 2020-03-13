@@ -46,11 +46,13 @@ export const FirstSection = styled.div`
     height: 100%;
 
     video {
+      width: 100%;
       height: 100%;
       /* margin: 0 auto; */
       object-fit: cover;
 
       @media (min-width: 768px) {
+        width: auto;
         height: auto;
       }
 

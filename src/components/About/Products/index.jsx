@@ -39,10 +39,10 @@ var Products = () => {
                 <p>뿌리 하강 유도 장치</p>
               </span>
               <AniLink
-                to="/product/clean-o"
                 fade
+                to="/product/clean-o"
                 onClick={() => {
-                  slideKeyChange();
+                  slideKeyChange(1);
                 }}>
                 <DetailViewButton />
               </AniLink>
@@ -60,10 +60,10 @@ var Products = () => {
                 <p>취송류 하강 유도 장치</p>
               </span>
               <AniLink
-                to="/product/clean-t"
                 fade
+                to="/product/clean-t"
                 onClick={() => {
-                  slideKeyChange();
+                  slideKeyChange(1);
                 }}>
                 <DetailViewButton />
               </AniLink>
