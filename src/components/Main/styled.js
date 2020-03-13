@@ -5,7 +5,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   overscroll-behavior-y: none;
 `;
@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const VerticalWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 300%;
+  height: 300vh;
   will-change: transform;
   transform: ${props => props.index === 0 && 'translateY(0)'};
   transform: ${props => props.index === 1 && 'translateY(-33.3333333333%)'};
