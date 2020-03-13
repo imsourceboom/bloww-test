@@ -22,6 +22,7 @@ export const FirstSection = styled.div`
   width: 100%;
   height: 33.3333333333%;
   position: relative;
+  overflow: hidden;
   /* background-image: url('/images/main/bg/reed.gif');
   background-position: center;
   background-size: cover;
@@ -51,14 +52,14 @@ export const FirstSection = styled.div`
       /* margin: 0 auto; */
       object-fit: cover;
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         width: auto;
         height: auto;
-      }
+      } */
 
-      @media (min-width: 1920px) {
+      /* @media (min-width: 1920px) {
         width: 100%;
-      }
+      } */
     }
   }
 
@@ -130,6 +131,7 @@ export const SecondSection = styled.div`
   height: 33.3333333333%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -270,6 +272,7 @@ export const ThirdSection = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  overflow: hidden;
 
   & > div {
     flex: 1;
