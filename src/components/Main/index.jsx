@@ -96,7 +96,10 @@ export default () => {
                 // poster="/images/main/bg/reed.jpg">
               >
                 {isDevice === 'Android' || isDevice === 'iPhone' ? (
-                  <source src="/images/main/bg/reed_small.mov" type="video/mp4" />
+                  <source
+                    src="https://d33wubrfki0l68.cloudfront.net/9b88a9b1a37587384fa15ef10cce6ac5bf4d245e/fc66e/images/main/bg/reed.mov"
+                    type="video/mp4"
+                  />
                 ) : (
                   <source
                     src="https://d33wubrfki0l68.cloudfront.net/9b88a9b1a37587384fa15ef10cce6ac5bf4d245e/fc66e/images/main/bg/reed.mov"
