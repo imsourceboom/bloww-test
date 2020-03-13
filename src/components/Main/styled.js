@@ -42,8 +42,8 @@ export const FirstSection = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     video {
       height: 100%;
@@ -55,7 +55,7 @@ export const FirstSection = styled.div`
       }
 
       @media (min-width: 1920px) {
-        width: 100vw;
+        width: 100%;
       }
     }
   }
