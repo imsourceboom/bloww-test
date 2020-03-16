@@ -181,25 +181,6 @@ export const SecondSection = styled.div`
         }
       }
 
-      .back-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          object-fit: cover;
-
-          @media (min-width: 768px) {
-            /* width: auto; */
-            height: ${props => (props.device === 'Windows PC' ? 'auto' : '100%')};
-          }
-        }
-      }
-
       .box {
         position: absolute;
         top: 50%;
@@ -275,6 +256,25 @@ export const SecondSection = styled.div`
 
     &.clean-t {
       background-image: url('/images/main/bg/clean-t-bg.jpg');
+
+      .box {
+        figure {
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 130px;
+
+            @media (min-width: 768px) {
+              width: 160px;
+            }
+
+            @media (min-width: 1024px) {
+              width: 200px;
+            }
+          }
+        }
+      }
     }
   }
 `;

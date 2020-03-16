@@ -1,10 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <svg
-    // width="155.063"
-    // height="174.348"
-    viewBox="0 0 155.063 174.348">
+  <svg viewBox="0 0 155.063 174.348">
     <g transform="translate(571 2163)">
       <rect
         width="72.269"

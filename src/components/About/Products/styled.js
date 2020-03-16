@@ -81,6 +81,27 @@ export const Container = styled(motion.div)`
     }
   }
 
+  .clean-t {
+    .box {
+      figure {
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 130px;
+
+          @media (min-width: 768px) {
+            width: 160px;
+          }
+
+          @media (min-width: 1024px) {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
   button {
     color: #333;
     border: 1px solid #333;
