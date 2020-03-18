@@ -27,10 +27,10 @@ export const FirstSection = styled.div`
   height: 33.3333333333%;
   position: relative;
   overflow: hidden;
-  /* background-image: url('/images/main/bg/reed.gif');
+  background-image: url('/images/main/bg/reed.jpg');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 
   &::before {
     content: '';

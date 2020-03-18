@@ -22,7 +22,7 @@ import {
   BuildMethod,
   ConstructionCase,
   Finish,
-  Video,
+  // Video,
 } from './styled';
 
 var CleanTcomponent = () => {

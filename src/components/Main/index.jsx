@@ -69,7 +69,7 @@ export default () => {
               </Wrapper>
             </Header>
             <MobileMenu />
-            <div className="bg-video-wrapper">
+            {/* <div className="bg-video-wrapper">
               <video muted={true} autoPlay={true} loop={true} playsInline={true}>
                 {isDevice === 'Android' || isDevice === 'iPhone' ? (
                   <source
@@ -83,7 +83,7 @@ export default () => {
                   />
                 )}
               </video>
-            </div>
+            </div> */}
             <div className="box">
               <div>
                 불어오는 바람의 방향으로 자연스럽게 흘러가듯이
