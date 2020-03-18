@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 
 import Footer from 'src/components/Footer';
 import SVGone from './Specification/T/SVGone';
@@ -25,6 +26,8 @@ import {
 } from './styled';
 
 var CleanTcomponent = () => {
+  const { isDevice } = useSelector(state => state.nav);
+
   return (
     <>
       <Container>
@@ -42,7 +45,7 @@ var CleanTcomponent = () => {
           </video>
         </VideoBox>
 
-        <Wrapper>
+        <Wrapper device={isDevice}>
           <MaxWidth>
             <Quote marginbottom="30">
               <IconContext.Provider value={{ className: 'quote left' }}>
