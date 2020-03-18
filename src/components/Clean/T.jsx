@@ -35,7 +35,10 @@ var CleanTcomponent = () => {
 
         <VideoBox>
           <video muted={true} autoPlay={true} loop={true} playsInline={true}>
-            <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
+            <source
+              src="https://d33wubrfki0l68.cloudfront.net/94f15f77ac0a67d72681b367311a54c261e2ee29/1ca06/images/clean-t/bg-video.mp4"
+              type="video/mp4"
+            />
           </video>
         </VideoBox>
 
