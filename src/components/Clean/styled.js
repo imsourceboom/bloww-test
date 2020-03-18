@@ -7,7 +7,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: -${height}px;
-  background-color: rgb(185, 212, 222);
+  /* background-color: rgb(185, 212, 222); */
 
   @media (min-width: 1024px) {
     margin-top: -${height + 10}px;
@@ -92,16 +92,25 @@ export const Title = styled.hgroup`
 
 export const VideoBox = styled.div`
   position: absolute;
-  top: 0;
+  top: 50vh;
   left: 0;
+  transform: translate(0, -50%);
   z-index: 2;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
+
+
+  @media (min-width: 1024px) {
+    top: 0;
+    transform: translate(0, 0);
+  }
+
 
   video {
     width: 100%;
     /* height: ${props => (props.device === 'Windows PC' ? 'auto' : '100%')}; */
     object-fit: cover;
+    margin-top: -1px;
   }
 `;
 

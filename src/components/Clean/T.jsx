@@ -1,15 +1,10 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { IconContext } from 'react-icons';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 import Footer from 'src/components/Footer';
 import SVGone from './Specification/T/SVGone';
 import SVGtwo from './Specification/T/SVGtwo';
-import AnimatedCleanT from 'src/components/SVG/AnimatedCleanT';
-import Wind from 'src/components/SVG/Wind';
-import WindTwin from 'src/components/SVG/WindTwin';
-import Wave from 'src/components/SVG/Wave';
 
 import {
   Container,
@@ -29,10 +24,7 @@ import {
   Video,
 } from './styled';
 
-// import { CleanTwrapper, WindWrapper, WindTwinWrapper, WaveWrapper } from './styled-t';
-
 var CleanTcomponent = () => {
-  const { isDevice } = useSelector(state => state.nav);
   return (
     <>
       <Container>
@@ -41,34 +33,13 @@ var CleanTcomponent = () => {
           <h2>취송류 하강 유도장치</h2>
         </Title>
 
-        {/* <WindWrapper>
-          <Wind />
-        </WindWrapper>
-
-        <WindTwinWrapper>
-          <WindTwin />
-        </WindTwinWrapper> */}
-
         <VideoBox>
           <video muted={true} autoPlay={true} loop={true} playsInline={true}>
-            {isDevice === 'Android' || isDevice === 'iPhone' ? (
-              <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
-            ) : (
-              <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
-            )}
+            <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
           </video>
         </VideoBox>
 
         <Wrapper>
-          {/* <CleanTwrapper
-          >
-            <AnimatedCleanT />
-          </CleanTwrapper> */}
-
-          {/* <WaveWrapper>
-            <Wave />
-          </WaveWrapper> */}
-
           <MaxWidth>
             <Quote marginbottom="30">
               <IconContext.Provider value={{ className: 'quote left' }}>

@@ -70,13 +70,7 @@ export default () => {
             </Header>
             <MobileMenu />
             <div className="bg-video-wrapper">
-              <video
-                muted={true}
-                autoPlay={true}
-                loop={true}
-                playsInline={true}
-                // poster="/images/main/bg/reed.jpg">
-              >
+              <video muted={true} autoPlay={true} loop={true} playsInline={true}>
                 {isDevice === 'Android' || isDevice === 'iPhone' ? (
                   <source
                     src="https://d33wubrfki0l68.cloudfront.net/9b88a9b1a37587384fa15ef10cce6ac5bf4d245e/fc66e/images/main/bg/reed.mov"
