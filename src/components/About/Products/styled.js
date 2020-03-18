@@ -83,19 +83,37 @@ export const Container = styled(motion.div)`
 
   .clean-t {
     .box {
+      margin-left: -10px;
+
+      @media (min-width: 768px) {
+        margin-left: -20px;
+      }
+      @media (min-width: 1024px) {
+        margin-left: 0;
+      }
+
       figure {
         display: flex;
         align-items: center;
+        margin-right: 10px;
+
+        @media (min-width: 768px) {
+          margin-right: 15px;
+        }
+
+        @media (min-width: 1024px) {
+          margin-right: 0;
+        }
 
         svg {
-          width: 130px;
+          width: 124px;
 
           @media (min-width: 768px) {
-            width: 160px;
+            width: 150px;
           }
 
           @media (min-width: 1024px) {
-            width: 200px;
+            width: 170px;
           }
         }
       }
