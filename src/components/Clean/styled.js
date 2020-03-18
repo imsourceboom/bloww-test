@@ -117,11 +117,13 @@ export const VideoBox = styled.div`
 export const Wrapper = styled.div`
   position: relative;
   width: 100%;
+  background-color: rgb(190, 211, 221);
   background-color: ${props => props.clean && '#d8c9bf'};
   background-color: ${props => props.device === 'Mac PC' && 'rgb(185,212,222)'};
   background-color: ${props =>
     (props.device === 'Windows PC') |
       (props.device === 'iPhone') |
+      (props.device === 'iPad') |
       (props.device === 'Android') && 'rgb(172,206,218)'};
   padding-top: ${verticalViewport + 40}vh;
 `;
