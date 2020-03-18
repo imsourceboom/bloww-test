@@ -7,6 +7,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: -${height}px;
+  /* background-color: rgb(185, 212, 222); */
 
   @media (min-width: 1024px) {
     margin-top: -${height + 10}px;
