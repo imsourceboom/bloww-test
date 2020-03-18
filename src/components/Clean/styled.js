@@ -7,6 +7,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   margin-top: -${height}px;
+  background-color: rgb(185, 212, 222);
 
   @media (min-width: 1024px) {
     margin-top: -${height + 10}px;
@@ -89,10 +90,25 @@ export const Title = styled.hgroup`
   }
 `;
 
+export const VideoBox = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+  video {
+    width: 100%;
+    /* height: ${props => (props.device === 'Windows PC' ? 'auto' : '100%')}; */
+    object-fit: cover;
+  }
+`;
+
 export const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  background-color: ${props => (props.clean ? '#d8c9bf' : '#B1CDD9')};
+  background-color: ${props => (props.clean ? '#d8c9bf' : 'rgb(185,212,222)')};
   padding-top: ${verticalViewport + 40}vh;
 `;
 

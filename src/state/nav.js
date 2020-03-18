@@ -1,13 +1,19 @@
 export const initialState = {
+  isDevice: null,
   notIndex: false,
   mobileNavigation: false,
   swiperSlideKey: 0,
 };
 
+export const IS_DEVICE = 'IS_DEVICE';
 export const NOT_INDEX = 'NOT_INDEX';
 export const MOBILE_NAVIGATION = 'MOBILE_NAVIGATION';
 export const SWIPER_SLIDE_KEY = 'SWIPER_SLIDE_KEY';
 
+export const isDeviceAction = isDevice => ({
+  type: IS_DEVICE,
+  isDevice,
+});
 export const notIndexAction = notIndex => ({
   type: NOT_INDEX,
   notIndex,
@@ -23,6 +29,12 @@ export const swiperSlideKeyAction = swiperSlideKey => ({
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case IS_DEVICE:
+      return {
+        ...state,
+        isDevice: action.isDevice,
+      };
+
     case NOT_INDEX:
       return {
         ...state,

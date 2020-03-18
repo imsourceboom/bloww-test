@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from 'gatsby';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import GlobalStyled from 'src/styles/GlobalStyled';
 
@@ -12,15 +12,34 @@ import MobileMenu from './MobileMenu';
 import GoTopButton from './GoTopButton';
 
 import { Header, Wrapper, Main } from './styled';
+import { isDeviceAction } from '../../state/nav';
 
 const Layout = ({ children }) => {
   const { notIndex } = useSelector(state => state.nav);
   const [path, setPath] = useState();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const path = window.location.pathname;
     setPath(path);
   }, [path]);
+
+  useEffect(() => {
+    const device = window.navigator.userAgent;
+    let name;
+    if (device.indexOf('iPhone') !== -1) {
+      name = 'iPhone';
+    } else if (device.indexOf('Android') !== -1) {
+      name = 'Android';
+    } else if (device.indexOf('Macintosh') !== -1) {
+      name = 'Mac PC';
+    } else if (device.indexOf('Windows') !== -1) {
+      name = 'Windows PC';
+    } else if (device.indexOf('iPad') !== -1) {
+      name = 'iPad';
+    }
+    dispatch(isDeviceAction(name));
+  }, [dispatch]);
 
   return (
     <>

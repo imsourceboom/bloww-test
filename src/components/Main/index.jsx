@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useSelector, useDispatch } from 'react-redux';
 import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
@@ -28,8 +28,7 @@ import {
 import { swiperSlideKeyAction } from '../../state/nav';
 
 export default () => {
-  const [isDevice, setIsDevice] = useState(null);
-  const { swiperSlideKey } = useSelector(state => state.nav);
+  const { isDevice, swiperSlideKey } = useSelector(state => state.nav);
   const dispatch = useDispatch();
 
   const upWheel = () => {
@@ -50,23 +49,6 @@ export default () => {
     },
     [dispatch],
   );
-
-  useEffect(() => {
-    const device = window.navigator.userAgent;
-    let name;
-    if (device.indexOf('iPhone') !== -1) {
-      name = 'iPhone';
-    } else if (device.indexOf('Android') !== -1) {
-      name = 'Android';
-    } else if (device.indexOf('Macintosh') !== -1) {
-      name = 'Mac PC';
-    } else if (device.indexOf('Windows') !== -1) {
-      name = 'Windows PC';
-    } else if (device.indexOf('iPad') !== -1) {
-      name = 'iPad';
-    }
-    setIsDevice(name);
-  }, []);
 
   return (
     <ReactScrollWheelHandler

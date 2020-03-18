@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { IconContext } from 'react-icons';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
@@ -13,6 +14,7 @@ import Wave from 'src/components/SVG/Wave';
 import {
   Container,
   Title,
+  VideoBox,
   Wrapper,
   MaxWidth,
   Quote,
@@ -24,11 +26,13 @@ import {
   BuildMethod,
   ConstructionCase,
   Finish,
+  Video,
 } from './styled';
 
-import { CleanTwrapper, WindWrapper, WindTwinWrapper, WaveWrapper } from './styled-t';
+// import { CleanTwrapper, WindWrapper, WindTwinWrapper, WaveWrapper } from './styled-t';
 
 var CleanTcomponent = () => {
+  const { isDevice } = useSelector(state => state.nav);
   return (
     <>
       <Container>
@@ -37,29 +41,33 @@ var CleanTcomponent = () => {
           <h2>취송류 하강 유도장치</h2>
         </Title>
 
-        <WindWrapper>
+        {/* <WindWrapper>
           <Wind />
         </WindWrapper>
 
         <WindTwinWrapper>
           <WindTwin />
-        </WindTwinWrapper>
+        </WindTwinWrapper> */}
+
+        <VideoBox>
+          <video muted={true} autoPlay={true} loop={true} playsInline={true}>
+            {isDevice === 'Android' || isDevice === 'iPhone' ? (
+              <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
+            ) : (
+              <source src="/images/clean-t/bg-video.mp4" type="video/mp4" />
+            )}
+          </video>
+        </VideoBox>
 
         <Wrapper>
-          <CleanTwrapper
-          // initial={{ y: 7, opacity: 0.8 }}
-          // animate={{ y: -7, opacity: 1 }}
-          // transition={{
-          //   yoyo: Infinity,
-          //   duration: 2.5,
-          // }}
+          {/* <CleanTwrapper
           >
             <AnimatedCleanT />
-          </CleanTwrapper>
+          </CleanTwrapper> */}
 
-          <WaveWrapper>
+          {/* <WaveWrapper>
             <Wave />
-          </WaveWrapper>
+          </WaveWrapper> */}
 
           <MaxWidth>
             <Quote marginbottom="30">
