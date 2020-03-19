@@ -4,13 +4,13 @@ export const FooterContainer = styled.footer`
   /* padding: 0 26px; */
   font-family: 'Noto Sans KR', sans-serif;
   /* border-top: 1px solid #707070; */
-  background-color: ${props => (props.bg ? `${props.bg}` : '#fff')};
   background-color: ${props => props.device === 'Mac PC' && 'rgb(185,212,222)'};
   background-color: ${props =>
     (props.device === 'Windows PC') |
       (props.device === 'iPhone') |
       (props.device === 'iPad') |
       (props.device === 'Android') && 'rgb(172,206,218)'};
+  background-color: ${props => props.bg && `${props.bg}`};
 
   @media (min-width: 768px) {
     padding: 0 54px;

@@ -33,7 +33,7 @@ var AboutComponent = () => {
         {/* Load map */}
         <Loadmap />
 
-        <FooterContainer />
+        <FooterContainer bg="#ffffff" />
       </PageMotionTransition>
     </>
   );
