@@ -1,11 +1,13 @@
 import React from 'react';
-// // import Fade from 'react-reveal/Fade';
+import { useSelector } from 'react-redux';
 
 import { FooterContainer } from './styled';
 
 var Footer = ({ bg }) => {
+  const { isDevice } = useSelector(state => state.nav);
+
   return (
-    <FooterContainer bg={bg}>
+    <FooterContainer bg={bg} device={isDevice}>
       <div className="container">
         <div className="information-wrapper">
           <p>상호명 : 주식회사 블로우(BLOWW Co.,Ltd.)</p>

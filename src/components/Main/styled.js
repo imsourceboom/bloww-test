@@ -350,7 +350,7 @@ export const Footer = styled.footer`
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
     font-size: 12px;
     padding: 30px 0 50px;
 
@@ -388,7 +388,7 @@ export const Footer = styled.footer`
       justify-content: center;
       padding: 0 16px;
 
-      margin-bottom: 26px;
+      margin-bottom: 20px;
 
       &:last-child {
         margin-bottom: 0;
@@ -405,7 +405,7 @@ export const Footer = styled.footer`
 
     img {
       width: 100%;
-      max-width: 70px;
+      max-width: 45px;
       margin: 0 auto;
     }
   }

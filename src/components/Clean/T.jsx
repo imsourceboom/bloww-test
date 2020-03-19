@@ -233,7 +233,7 @@ var CleanTcomponent = () => {
           </MaxWidth>
         </Wrapper>
       </Container>
-      <Footer bg="#B1CDD9" />
+      <Footer cleant />
     </>
   );
 };
