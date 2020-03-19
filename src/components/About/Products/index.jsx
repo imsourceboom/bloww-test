@@ -39,7 +39,7 @@ var Products = () => {
                 <p>뿌리 하강 유도 장치</p>
               </span>
               <AniLink
-                fade
+                // fade
                 to="/product/clean-o"
                 onClick={() => {
                   slideKeyChange(1);
@@ -60,7 +60,7 @@ var Products = () => {
                 <p>취송류 하강 유도 장치</p>
               </span>
               <AniLink
-                fade
+                // fade
                 to="/product/clean-t"
                 onClick={() => {
                   slideKeyChange(1);
