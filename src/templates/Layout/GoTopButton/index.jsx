@@ -29,8 +29,9 @@ var GoTopButton = ({ path }) => {
         }}
         slidekey={swiperSlideKey}
         path={path}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}>
+        // whileHover={{ scale: 1.05 }}
+        // whileTap={{ scale: 0.95 }}
+      >
         <IconContext.Provider value={{ className: 'icon', size: '26px' }}>
           <div>
             <FiChevronUp />
