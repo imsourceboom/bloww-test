@@ -26,7 +26,8 @@ export const Button = styled(motion.button)`
         `
       : css`
           border: 1px solid #fff;
-          color: #fff;
+          /* color: #fff; */
+          color: ${props => props.path !== '/' && '#fff'};
 
           &:hover {
             background-color: #fff;
