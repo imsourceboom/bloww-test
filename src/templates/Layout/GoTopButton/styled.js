@@ -9,36 +9,38 @@ export const Button = styled(motion.button)`
   width: 35px;
   height: 35px;
   transition: 0.15s;
+  color: rgba(0, 0, 0, 0);
 
   ${props =>
-    (props.slidekey === 2) | (props.path === '/about')
-      ? css`
-          border: 1px solid #838383;
-          color: #838383;
+    (props.slidekey === 2) | (props.path === '/about') &&
+    css`
+      border: 1px solid #838383;
+      color: #838383;
 
-          &:hover {
-            background-color: #838383;
+      &:hover {
+        background-color: #838383;
 
-            svg {
-              stroke: #fff;
-            }
-          }
-        `
-      : css`
-          border: 1px solid #fff;
-          /* color: #fff; */
-          color: ${props => props.path !== '/' && '#fff'};
+        svg {
+          stroke: #fff;
+        }
+      }
+    `};
 
-          &:hover {
-            background-color: #fff;
+  ${props =>
+    (props.path === '/product/clean-o') | (props.path === '/product/clean-t') &&
+    css`
+      border: 1px solid #fff;
+      color: #fff;
 
-            svg {
-              stroke: #838383;
-            }
-          }
-        `};
+      &:hover {
+        background-color: #fff;
 
-  color: ${props => props.path === '/' && 'rgba(255,255,255,0)'};
+        svg {
+          stroke: #838383;
+        }
+      }
+    `};
+
   display: ${props => props.path === '/' && 'none'};
 
   @media (min-width: 768px) {
