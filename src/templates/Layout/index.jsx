@@ -11,7 +11,7 @@ import Hamburger from './Hamburger';
 import MobileMenu from './MobileMenu';
 import GoTopButton from './GoTopButton';
 
-import { useScroll } from 'src/utils/useScroll';
+// import { useScroll } from 'src/utils/useScroll';
 
 import { Header, Wrapper, Main } from './styled';
 import { isDeviceAction } from '../../state/nav';
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   const { notIndex } = useSelector(state => state.nav);
   const [path, setPath] = useState();
   const dispatch = useDispatch();
-  const scrollValue = useScroll().scrollY;
+  // const scrollValue = useScroll().scrollY;
 
   useEffect(() => {
     const path = window.location.pathname;
@@ -46,7 +46,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {console.log(scrollValue)}
       <GlobalStyled />
       {path !== '/' && (
         <>
@@ -58,7 +57,8 @@ const Layout = ({ children }) => {
             </Wrapper>
           </Header>
           <MobileMenu path={path} />
-          {scrollValue >= 800 && <GoTopButton path={path} />}
+          {/* {scrollValue >= 800 && <GoTopButton path={path} />} */}
+          <GoTopButton path={path} />
         </>
       )}
       <Main path={path}>{children}</Main>
