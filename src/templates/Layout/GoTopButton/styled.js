@@ -39,8 +39,6 @@ export const Button = styled(motion.button)`
         `};
 
   @media (min-width: 768px) {
-    /* right: 10vw; */
-    /* bottom: 10vw; */
     width: 40px;
     height: 40px;
   }
