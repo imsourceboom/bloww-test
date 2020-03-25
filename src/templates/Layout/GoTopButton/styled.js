@@ -17,17 +17,15 @@ export const Button = styled(motion.button)`
       border: 1px solid #838383;
       color: #838383;
 
-      ${props =>
-        (props.device !== 'iPhone') | (props.device !== 'iPad') &&
-        css`
-          &:hover {
-            background-color: #838383;
+      @media (min-width: 1366px) {
+        &:hover {
+          background-color: #838383;
 
-            svg {
-              stroke: #fff;
-            }
+          svg {
+            stroke: #fff;
           }
-        `}
+        }
+      }
     `};
 
   ${props =>
@@ -36,17 +34,15 @@ export const Button = styled(motion.button)`
       border: 1px solid #fff;
       color: #fff;
 
-      ${props =>
-        (props.device !== 'iPhone') | (props.device !== 'iPad') &&
-        css`
-          &:hover {
-            background-color: #fff;
+      @media (min-width: 1366px) {
+        &:hover {
+          background-color: #fff;
 
-            svg {
-              stroke: #838383;
-            }
+          svg {
+            stroke: #838383;
           }
-        `}
+        }
+      }
     `};
 
   display: ${props => props.path === '/' && 'none'};
