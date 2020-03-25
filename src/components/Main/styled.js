@@ -82,7 +82,7 @@ export const FirstSection = styled.div`
       font-size: 20px;
     }
 
-    & > div {
+    div {
       line-height: 1.2;
       margin-bottom: 10px;
 
@@ -102,10 +102,10 @@ export const FirstSection = styled.div`
 
     figure {
       margin-top: 15px;
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
 
       @media (min-width: 768px) {
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
       }
 
       svg {
@@ -193,7 +193,7 @@ export const SecondSection = styled.div`
         @media (min-width: 1024px) {
           flex-direction: column;
           align-items: center;
-          opacity: 0;
+          /* opacity: 0; */
           transition: 0.3s;
         }
 
@@ -315,6 +315,7 @@ export const ThirdSection = styled.div`
       max-width: 1300px;
       margin: 0 auto;
       line-height: 1.6;
+      text-align: center;
 
       b {
         display: inline-block;

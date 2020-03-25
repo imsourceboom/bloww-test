@@ -8,7 +8,7 @@ import { Button } from './styled';
 
 import { swiperSlideKeyAction } from 'src/state/nav';
 
-var GoTopButton = ({ path }) => {
+var GoTopButton = ({ device, path }) => {
   var scroll = Scroll.animateScroll;
   var { swiperSlideKey } = useSelector(state => state.nav);
   var dispatch = useDispatch();
@@ -24,11 +24,12 @@ var GoTopButton = ({ path }) => {
     <>
       <Button
         onClick={() => {
-          scroll.scrollToTop({ duration: 700, smooth: true });
+          scroll.scrollToTop({ duration: 0 });
           slideKeyChange(0);
         }}
         slidekey={swiperSlideKey}
         path={path}
+        device={device}
         // whileHover={{ scale: 1.05 }}
         // whileTap={{ scale: 0.95 }}
       >

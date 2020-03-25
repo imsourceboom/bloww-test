@@ -17,7 +17,7 @@ import { Header, Wrapper, Main } from './styled';
 import { isDeviceAction } from '../../state/nav';
 
 const Layout = ({ children }) => {
-  const { notIndex } = useSelector(state => state.nav);
+  const { isDevice, notIndex } = useSelector(state => state.nav);
   const [path, setPath] = useState();
   const dispatch = useDispatch();
   // const scrollValue = useScroll().scrollY;
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
           </Header>
           <MobileMenu path={path} />
           {/* {scrollValue >= 800 && <GoTopButton path={path} />} */}
-          <GoTopButton path={path} />
+          <GoTopButton device={isDevice} path={path} />
         </>
       )}
       <Main path={path}>{children}</Main>

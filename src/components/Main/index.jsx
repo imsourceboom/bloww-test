@@ -85,22 +85,22 @@ export default () => {
               </video>
             </div> */}
             <div className="box">
-              <div>
-                불어오는 바람의 방향으로 자연스럽게 흘러가듯이
-                <br />
-                가장 자연스러운 방법으로 바꾸어갑니다.
-              </div>
-              <p>자연을 움직이는 자연의 힘.</p>
-              <figure>
-                <MainLogo />
-              </figure>
               <AniLink
                 // fade
                 to="/about"
                 onClick={() => {
                   slideKeyChange(0);
                 }}>
-                <DetailViewButton />
+                {/* <DetailViewButton /> */}
+                <div>
+                  불어오는 바람의 방향으로 자연스럽게 흘러가듯이
+                  <br />
+                  가장 자연스러운 방법으로 바꾸어갑니다.
+                </div>
+                <p>자연을 움직이는 자연의 힘.</p>
+                <figure>
+                  <MainLogo />
+                </figure>
               </AniLink>
             </div>
           </FirstSection>
