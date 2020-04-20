@@ -40,6 +40,8 @@ const Layout = ({ children }) => {
       name = 'Windows PC';
     } else if (device.indexOf('iPad') !== -1) {
       name = 'iPad';
+    } else if (device.indexOf('rv:11.0') !== -1 || device.indexOf('MSIE') !== -1) {
+      name = 'IE';
     }
     dispatch(isDeviceAction(name));
   }, [dispatch]);

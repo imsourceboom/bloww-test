@@ -87,7 +87,7 @@ var CleanTcomponent = () => {
                   <FaQuoteLeft />
                 </span>
               </IconContext.Provider>
-              {isDevice === 'Window PC' ? (
+              {isDevice === 'IE' ? (
                 <p className="comment">
                   바람과 물의 흐름을 이용한 <br />
                   친환경적인 장치로 녹조현상을 개선할 수 있습니다.

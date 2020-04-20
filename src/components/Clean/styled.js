@@ -164,7 +164,7 @@ export const Quote = styled.div`
   }
 
   ${({ device }) => {
-    if (device !== 'Window PC') {
+    if (device !== 'IE') {
       return css`
         br {
           @media (min-width: 1024px) {
