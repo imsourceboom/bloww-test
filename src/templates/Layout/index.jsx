@@ -14,7 +14,7 @@ import GoTopButton from './GoTopButton';
 // import { useScroll } from 'src/utils/useScroll';
 
 import { Header, Wrapper, Main } from './styled';
-import { isDeviceAction } from '../../state/nav';
+import { isDeviceAction, isBrowserAction } from '../../state/nav';
 
 const Layout = ({ children }) => {
   const { isDevice, notIndex } = useSelector(state => state.nav);
@@ -29,7 +29,11 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     const device = window.navigator.userAgent;
+    const browser = window.navigator.userAgent;
+
     let name;
+    let kind;
+
     if (device.indexOf('iPhone') !== -1) {
       name = 'iPhone';
     } else if (device.indexOf('Android') !== -1) {
@@ -40,10 +44,16 @@ const Layout = ({ children }) => {
       name = 'Windows PC';
     } else if (device.indexOf('iPad') !== -1) {
       name = 'iPad';
-    } else if (device.indexOf('rv:11.0') !== -1 || device.indexOf('MSIE') !== -1) {
-      name = 'IE';
     }
+
+    if (browser.indexOf('rv:11.0') !== -1 || browser.indexOf('MSIE') !== -1) {
+      kind = 'IE';
+    } else if (browser.indexOf('Chrome') !== -1) {
+      kind = 'Chrome';
+    }
+
     dispatch(isDeviceAction(name));
+    dispatch(isBrowserAction(kind));
   }, [dispatch]);
 
   return (

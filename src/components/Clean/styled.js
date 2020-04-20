@@ -163,8 +163,8 @@ export const Quote = styled.div`
     font-size: 30px;
   }
 
-  ${({ device }) => {
-    if (device !== 'IE') {
+  ${({ browser }) => {
+    if (browser !== 'IE') {
       return css`
         br {
           @media (min-width: 1024px) {

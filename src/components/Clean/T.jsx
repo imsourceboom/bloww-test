@@ -26,7 +26,7 @@ import {
 } from './styled';
 
 var CleanTcomponent = () => {
-  const { isDevice } = useSelector(state => state.nav);
+  const { isDevice, isBrowser } = useSelector(state => state.nav);
 
   return (
     <>
@@ -47,7 +47,7 @@ var CleanTcomponent = () => {
 
         <Wrapper device={isDevice}>
           <MaxWidth>
-            <Quote marginbottom="30" device={isDevice}>
+            <Quote marginbottom="30" browser={isBrowser}>
               <IconContext.Provider value={{ className: 'quote left' }}>
                 <span className="icon-wrapper">
                   <FaQuoteLeft />
@@ -81,13 +81,13 @@ var CleanTcomponent = () => {
               </li>
             </Issue>
 
-            <Quote marginbottom="120">
+            <Quote marginbottom="120" browser={isBrowser}>
               <IconContext.Provider value={{ className: 'quote left' }}>
                 <span className="icon-wrapper">
                   <FaQuoteLeft />
                 </span>
               </IconContext.Provider>
-              {isDevice === 'IE' ? (
+              {isBrowser === 'IE' ? (
                 <p className="comment">
                   바람과 물의 흐름을 이용한 <br />
                   친환경적인 장치로 녹조현상을 개선할 수 있습니다.
