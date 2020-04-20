@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { height } from 'src/styles/variable';
 
 const verticalViewport = 50;
@@ -163,11 +163,17 @@ export const Quote = styled.div`
     font-size: 30px;
   }
 
-  br {
-    @media (min-width: 1024px) {
-      display: none;
+  ${({ device }) => {
+    if (device !== 'Window PC') {
+      return css`
+        br {
+          @media (min-width: 1024px) {
+            display: none;
+          }
+        }
+      `;
     }
-  }
+  }}
 
   .comment {
     @media (min-width: 768px) {

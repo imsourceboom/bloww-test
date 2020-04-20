@@ -47,7 +47,7 @@ var CleanTcomponent = () => {
 
         <Wrapper device={isDevice}>
           <MaxWidth>
-            <Quote marginbottom="30">
+            <Quote marginbottom="30" device={isDevice}>
               <IconContext.Provider value={{ className: 'quote left' }}>
                 <span className="icon-wrapper">
                   <FaQuoteLeft />
@@ -87,11 +87,18 @@ var CleanTcomponent = () => {
                   <FaQuoteLeft />
                 </span>
               </IconContext.Provider>
-              <p className="comment">
-                바람과 물의 흐름을 이용한 <br />
-                친환경적인 장치로 <br />
-                녹조현상을 개선할 수 있습니다.
-              </p>
+              {isDevice === 'Window PC' ? (
+                <p className="comment">
+                  바람과 물의 흐름을 이용한 <br />
+                  친환경적인 장치로 녹조현상을 개선할 수 있습니다.
+                </p>
+              ) : (
+                <p className="comment">
+                  바람과 물의 흐름을 이용한 <br />
+                  친환경적인 장치로 <br />
+                  녹조현상을 개선할 수 있습니다.
+                </p>
+              )}
               <IconContext.Provider value={{ className: 'quote right' }}>
                 <span className="icon-wrapper">
                   <FaQuoteRight />
