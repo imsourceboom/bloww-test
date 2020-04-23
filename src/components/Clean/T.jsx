@@ -175,7 +175,7 @@ var CleanTcomponent = () => {
                   <figure>
                     <img src="/images/clean-t/build-002.svg" alt="clean-t 설치방법 2" />
                     <figcaption>
-                      2. 바람에 밀려온 물결이 설치된 T자 부교 구조를 만나면 수심 아해
+                      2. 바람에 밀려온 물결이 설치된 T자 부교 구조를 만나면 수심 아래
                       50m까지 내려갑니다.
                     </figcaption>
                   </figure>

@@ -1,5 +1,5 @@
 export const initialState = {
-  isBrowser: null,
+  isDevice: null,
   isBrowser: null,
   notIndex: false,
   mobileNavigation: false,
