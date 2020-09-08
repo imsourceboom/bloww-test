@@ -6,7 +6,7 @@ import Introduce from './Introduce';
 import LogoDescription from './LogoDescription';
 import Products from './Products';
 import Patent from './Patent';
-import Loadmap from './Loadmap';
+import Roadmap from './Roadmap';
 
 import { PageMotionTransition } from './styled';
 
@@ -31,7 +31,7 @@ var AboutComponent = () => {
         <Patent />
 
         {/* Load map */}
-        <Loadmap />
+        <Roadmap />
 
         <FooterContainer bg="#ffffff" />
       </PageMotionTransition>

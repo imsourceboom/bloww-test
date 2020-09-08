@@ -5,12 +5,12 @@ import { Wrapper, Title } from '../styled';
 import { Container, ItemBox } from './styled';
 import { FlexBox } from 'src/styles/common';
 
-var Loadmap = () => {
+var Roadmap = () => {
   return (
     <Wrapper margin="0 0 150px">
       {/* <Fade top> */}
       <Title lang={'en'} margin="0 0 100px">
-        Load map
+        Road map
       </Title>
       {/* </Fade> */}
       <Container>
@@ -206,4 +206,4 @@ var Loadmap = () => {
   );
 };
 
-export default Loadmap;
+export default Roadmap;
