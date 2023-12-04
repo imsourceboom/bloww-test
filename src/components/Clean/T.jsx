@@ -54,8 +54,8 @@ var CleanTcomponent = () => {
                 </span>
               </IconContext.Provider>
               <p className="comment">
-                수질오염으로 인한 녹조, 적조 현상은
-                <br /> 매년 반복되는 심각한 문제 중 하나입니다.
+                수질오염은 매년 반복되는
+                <br /> 심각한 문제 중 하나입니다.
               </p>
               <IconContext.Provider value={{ className: 'quote right' }}>
                 <span className="icon-wrapper">
@@ -65,11 +65,13 @@ var CleanTcomponent = () => {
             </Quote>
 
             <Description marginbottom="30">
-              우리나라뿐만 아니라 전 세계에서 발생하는 녹조 현상은 수온이 높고 일조량이
+              {/* 우리나라뿐만 아니라 전 세계에서 발생하는 녹조 현상은 수온이 높고 일조량이
               많을 때,
               <br /> 수질 내 영양물질이 과도하게 유입되어 식물성 플랑크톤이 많아지면서,
               <br /> 물빛이 녹색으로 바뀌어 보이는 현상을 말하며, 특히 여름철에 많이
-              발생합니다.
+              발생합니다. */}
+              우리나라뿐만 아니라 전 세계에서 발생하는 수질오염 현상을 극복하고
+              <br /> 맑고 깨끗한 물을 보존하는 것은 인류의 숙제입니다.
             </Description>
 
             <Issue marginbottom="120">
@@ -90,13 +92,13 @@ var CleanTcomponent = () => {
               {isBrowser === 'IE' ? (
                 <p className="comment">
                   바람과 물의 흐름을 이용한 <br />
-                  친환경적인 장치로 녹조현상을 개선할 수 있습니다.
+                  친환경적인 장치로 오염된 수질을 개선할 수 있습니다.
                 </p>
               ) : (
                 <p className="comment">
                   바람과 물의 흐름을 이용한 <br />
                   친환경적인 장치로 <br />
-                  녹조현상을 개선할 수 있습니다.
+                  오염된 수질을 개선할 수 있습니다.
                 </p>
               )}
               <IconContext.Provider value={{ className: 'quote right' }}>
