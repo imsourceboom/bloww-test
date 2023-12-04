@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bloww.io/sitemap.xml
-Host: https://bloww.io
