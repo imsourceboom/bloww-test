@@ -170,7 +170,7 @@ export default () => {
                   {/* <p>대표번호 : 미정</p> */}
                   <p>Copyright © BLOWW. All rights Reserved.</p>
                 </div>
-                <div className="mark-wrapper">
+                {/* <div className="mark-wrapper">
                   <div className="cover">
                     <figure>
                       <img src="/images/mark/mark-001.png" alt="조달청 인증마크" />
@@ -197,7 +197,7 @@ export default () => {
                     </figure>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Footer>
           </ThirdSection>
         </VerticalWrapper>
