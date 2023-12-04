@@ -236,7 +236,10 @@ var CleanTcomponent = () => {
                   return (
                     <li>
                       <figure>
-                        <img src={`/images/clean-t/clean-t-field-${v}`} alt="" />
+                        <img
+                          src={`/images/clean-t/clean-t-field-${v}.jpg`}
+                          alt={`clean-t 시공 ${v}`}
+                        />
                       </figure>
                     </li>
                   );
