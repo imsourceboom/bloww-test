@@ -156,7 +156,7 @@ export default () => {
                 <b className="title">Contact</b>
                 <div>
                   <p>제품상담 및 문의사항</p>
-                  <p>bloww@bloww.io</p>
+                  <p>kimjaewook@bloww.io</p>
                 </div>
               </div>
             </div>
