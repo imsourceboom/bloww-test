@@ -196,8 +196,8 @@ export default () => {
                       <img src="/images/mark/mark-004.png" alt="기획재정부 인증마크" />
                     </figure>
                   </div>
-                </div>
-              </div> */}
+                </div> */}
+              </div>
             </Footer>
           </ThirdSection>
         </VerticalWrapper>
