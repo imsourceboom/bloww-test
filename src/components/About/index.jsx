@@ -6,6 +6,7 @@ import Introduce from './Introduce';
 import LogoDescription from './LogoDescription';
 import Products from './Products';
 import Patent from './Patent';
+import Auth from './Auth';
 import Roadmap from './Roadmap';
 
 import { PageMotionTransition } from './styled';
@@ -29,6 +30,9 @@ var AboutComponent = () => {
 
         {/* 특허등록 */}
         <Patent />
+
+        {/* 인증사항 */}
+        <Auth />
 
         {/* Load map */}
         <Roadmap />
