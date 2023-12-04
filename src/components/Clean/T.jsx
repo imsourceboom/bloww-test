@@ -149,7 +149,7 @@ var CleanTcomponent = () => {
               <div className="caution">* 강의 넓이에 따라 제품의 규격이 변동됩니다.</div>
             </Specification>
 
-            <Description marginbottom="120">
+            <Description marginbottom="120" style={{ visibility: 'hidden' }}>
               취송류 하강 유도장치는 녹조현상이 반복적으로 발생하는 호수나 저수지에
               자연스러운 물의 순환이 이루어지도록 돕는 장치입니다. 지형에 따라 바람의
               방향, 물의 흐름 등을 전문적으로 분석하여 설치되며, 물의 순환과 함께 심층까지
