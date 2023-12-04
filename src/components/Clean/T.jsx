@@ -55,7 +55,7 @@ var CleanTcomponent = () => {
               </IconContext.Provider>
               <p className="comment">
                 수질오염은 매년 반복되는
-                <br /> 심각한 문제 중 하나입니다.
+                <br /> 심각한 사회적 문제 중 하나입니다.
               </p>
               <IconContext.Provider value={{ className: 'quote right' }}>
                 <span className="icon-wrapper">
@@ -70,7 +70,7 @@ var CleanTcomponent = () => {
               <br /> 수질 내 영양물질이 과도하게 유입되어 식물성 플랑크톤이 많아지면서,
               <br /> 물빛이 녹색으로 바뀌어 보이는 현상을 말하며, 특히 여름철에 많이
               발생합니다. */}
-              우리나라뿐만 아니라 전 세계에서 발생하는 수질오염 현상을 극복하고
+              우리나라 뿐만 아니라 전 세계에서 발생하는 수질오염 현상을 극복하고
               <br /> 맑고 깨끗한 물을 보존하는 것은 인류의 숙제입니다.
             </Description>
 
