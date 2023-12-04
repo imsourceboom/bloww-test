@@ -203,12 +203,12 @@ var CleanTcomponent = () => {
             </BuildMethod>
 
             <ArticleTitle>
-              <h3>시공사례</h3>
+              <h3>시공사진</h3>
             </ArticleTitle>
 
             <ConstructionCase>
               <ul>
-                <li>
+                {/* <li>
                   <figure>
                     <img src="/images/clean-t/case-001.jpg" alt="clean-t 시공사례 1" />
                     <figcaption>춘천 서상저수지</figcaption>
@@ -231,7 +231,16 @@ var CleanTcomponent = () => {
                     <img src="/images/clean-t/case-004.jpg" alt="clean-t 시공사례 4" />
                     <figcaption>아산 수철리저수지</figcaption>
                   </figure>
-                </li>
+                </li> */}
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(v => {
+                  return (
+                    <li>
+                      <figure>
+                        <img src={`/images/clean-t/clean-t-field-${v}`} alt="" />
+                      </figure>
+                    </li>
+                  );
+                })}
               </ul>
             </ConstructionCase>
 
