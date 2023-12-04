@@ -36,14 +36,14 @@ var Patent = () => {
         <Swiper {...params}>
           <div>
             <figure>
-              <img src="/images/patent/clean-o-001.jpg" alt="가로수 뿌리 관리용 장치" />
+              <img src="/images/patent/clean-o-002.jpg" alt="가로수 뿌리 관리용 장치" />
               <figcaption>가로수 뿌리 관리용 장치</figcaption>
             </figure>
           </div>
           <div>
             <figure>
               <img
-                src="/images/patent/clean-t-001.jpg"
+                src="/images/patent/clean-t-002.jpg"
                 alt="풍향에 대응하는 수질 정화 장치"
               />
               <figcaption>풍향에 대응하는 수질 정화 장치</figcaption>
