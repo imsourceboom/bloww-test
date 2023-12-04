@@ -17,7 +17,7 @@ var Footer = ({ bg }) => {
           {/* <p>대표번호 : 미정</p> */}
           <p>Copyright © BLOWW. All rights Reserved.</p>
         </div>
-        <div className="mark-wrapper">
+        {/* <div className="mark-wrapper">
           <div className="cover">
             <figure>
               <img src="/images/mark/mark-001.png" alt="조달청 인증마크" />
@@ -40,7 +40,7 @@ var Footer = ({ bg }) => {
               <img src="/images/mark/mark-004.png" alt="기획재정부 인증마크" />
             </figure>
           </div>
-        </div>
+        </div> */}
       </div>
     </FooterContainer>
   );
