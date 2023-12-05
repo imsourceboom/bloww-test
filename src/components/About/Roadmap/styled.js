@@ -78,3 +78,33 @@ export const Container = styled.div`
     flex: 1;
   }
 `;
+
+export const RoadMapTitle = styled.h2`
+  text-align: center;
+  font-size: 22px;
+  font-family: ${props => props.lang === 'ko' && '"Noto Sans KR", sans-serif'};
+  font-family: ${props => props.lang === 'en' && '"Titillium Web", sans-serif'};
+  margin: ${props => props.margin && `${props.margin}`};
+  margin-bottom: 0px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 26px;
+  }
+`;
+
+export const ImgWarp = styled.figure`
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  img {
+    min-width: 1500px;
+    // width: 100%;
+    // flex: 0 0 auto;
+  }
+`;
