@@ -232,7 +232,7 @@ var CleanTcomponent = () => {
                     <figcaption>아산 수철리저수지</figcaption>
                   </figure>
                 </li> */}
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(v => {
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(v => {
                   return (
                     <li>
                       <figure>

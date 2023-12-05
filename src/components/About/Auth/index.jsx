@@ -43,7 +43,7 @@ var Patent = () => {
           <div>
             <figure>
               <img src="/images/auth/auth-2.jpg" alt="ISO14001:2015 - 품질경영관리" />
-              <figcaption>ISO14001:2015 - 품질경영관리</figcaption>
+              <figcaption>ISO14001:2015 - 환경경영관리</figcaption>
             </figure>
           </div>
         </Swiper>
