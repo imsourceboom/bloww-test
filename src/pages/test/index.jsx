@@ -17,9 +17,12 @@ var Test = () => {
 
   return (
     <div>
+      <h3>Referral</h3>
       <a href="https://t.me/notcoin_bot?start=rp_14459282">
         https://t.me/notcoin_bot?start=rp_14459282
       </a>
+      <h3>Gift 1,000,000</h3>
+      <a href="https://t.me/notcoin/188">https://t.me/notcoin/188</a>
     </div>
   );
 };
